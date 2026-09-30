@@ -62,6 +62,22 @@ class HomePageTests(TestCase):
 		send_email.assert_called_once_with(fail_silently=False)
 		self.assertContains(response, 'Your inquiry was saved, but its email notification could not be sent.')
 
+	@override_settings(
+		EMAIL_BACKEND='django.core.mail.backends.locmem.EmailBackend',
+		EMAIL_HOST_PASSWORD='',
+	)
+	def test_missing_smtp_password_reports_email_not_sent(self):
+		response = self.client.post('/', {
+			'name': 'Taylor Morgan',
+			'email': 'taylor@example.com',
+			'service': 'custom-software',
+			'message': 'A project idea.',
+		}, follow=True)
+
+		self.assertEqual(ContactInquiry.objects.count(), 1)
+		self.assertEqual(len(mail.outbox), 0)
+		self.assertContains(response, 'Your inquiry was saved, but its email notification could not be sent.')
+
 	def test_invalid_contact_inquiry_is_not_saved(self):
 		response = self.client.post('/', {
 			'name': 'Taylor Morgan',
