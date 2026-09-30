@@ -131,3 +131,7 @@ EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER', 'indsrvamlopa@gmail.com')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', 'qmugegltqhxlqens')
 DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL', EMAIL_HOST_USER)
 PROJECT_INQUIRY_TO_EMAIL = os.environ.get('PROJECT_INQUIRY_TO_EMAIL', 'indsrvamlopa@gmail.com')
+
+
+STATIC_URL = "static/"
+STATIC_ROOT = BASE_DIR / "staticfiles"
