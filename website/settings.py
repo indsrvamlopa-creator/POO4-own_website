@@ -29,7 +29,9 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "127.0.0.1",
     "localhost",
-    "https://p1c4s84c-8000.inc1.devtunnels.ms/"]
+    "p1c4s84c-8000.inc1.devtunnels.ms",
+    "poo4-own-website-sfb7.onrender.com",
+]
 
 
 # Application definition
@@ -128,7 +130,7 @@ EMAIL_HOST = os.environ.get('EMAIL_HOST', 'smtp.gmail.com')
 EMAIL_PORT = int(os.environ.get('EMAIL_PORT', '587'))
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER', 'indsrvamlopa@gmail.com')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', 'qmugegltqhxlqens')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', '')
 DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL', EMAIL_HOST_USER)
 PROJECT_INQUIRY_TO_EMAIL = os.environ.get('PROJECT_INQUIRY_TO_EMAIL', 'indsrvamlopa@gmail.com')
 
