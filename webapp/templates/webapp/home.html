@@ -1,0 +1,259 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080a0e">
+  <meta name="description" content="AMLOPA INDSRV builds software, AI and automation solutions that move modern businesses forward.">
+  <title>AMLOPA | INDSRV — Digital Products, AI & Software</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'webapp/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'webapp/motion.css' %}">
+  <link rel="stylesheet" href="{% static 'webapp/universe.css' %}">
+  <link rel="stylesheet" href="{% static 'webapp/contact-links.css' %}">
+  <script>document.documentElement.classList.add('js-enabled');</script>
+</head>
+<body>
+  <div class="site-loader" aria-hidden="true"><i class="loader-point"></i><span class="loader-name">AMLOPA</span><small>INDSRV</small><i class="loader-line"></i></div>
+  <div class="scroll-progress" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+  <header class="site-header" id="site-header">
+    <div class="header-inner page-width">
+      <a class="brand" href="#home" aria-label="AMLOPA INDSRV home"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-wordmark">AMLOPA <b>|</b> <small>INDSRV</small></span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#products">Products</a>
+        <a href="#ai">AI & Automation</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-cta magnetic" data-magnetic href="#contact">Start a Project <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  {% if messages %}
+  <div class="toast-stack" aria-live="polite">
+    {% for message in messages %}<p class="toast">{{ message }}</p>{% endfor %}
+  </div>
+  {% endif %}
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-image" aria-hidden="true"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2000&q=90" alt="" fetchpriority="high" decoding="async"></div>
+      <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="page-width hero-content">
+        <div class="hero-copy reveal">
+          <span class="eyebrow"><i></i> AMLOPA <span class="eyebrow-divider">/</span> INDSRV</span>
+          <h1 id="hero-title" aria-label="Build the future. Build intelligently. Build with AMLOPA."><span class="headline-state is-active" data-headline="0" aria-hidden="false"><span class="hero-line"><span class="hero-word">BUILD</span> <span class="hero-word">THE</span></span><span class="hero-line hero-line-accent"><span class="hero-word">FUTURE.</span></span></span><span class="headline-state" data-headline="1" aria-hidden="true"><span class="hero-line"><span class="hero-word">BUILD</span></span><span class="hero-line hero-line-accent headline-condensed"><span class="hero-word">INTELLIGENTLY.</span></span></span><span class="headline-state" data-headline="2" aria-hidden="true"><span class="hero-line"><span class="hero-word">BUILD WITH</span></span><span class="hero-line hero-line-accent"><span class="hero-word">AMLOPA.</span></span></span></h1>
+          <p>AI, software and automation for ambitious businesses.</p>
+          <div class="hero-actions"><a class="button button-light magnetic" data-magnetic href="#contact">Start a Project <span>↗</span></a><a class="button button-quiet magnetic" data-magnetic href="#solutions">Explore Solutions <span>↓</span></a></div>
+          <div class="hero-signature"><span class="signature-line"></span><span>Digital products <i>·</i> AI <i>·</i> Software <i>·</i> Automation</span></div>
+        </div>
+        <div class="hero-product reveal" data-tilt role="img" aria-label="Illustrative interface showing connected software, data and AI workflows">
+          <div class="hero-product-top"><span><i></i><i></i><i></i></span><span>AMLOPA / SYSTEMS VIEW</span><span>01—04</span></div>
+          <div class="hero-product-body">
+            <div class="system-label"><span>CONNECTED INTELLIGENCE</span><b>Live environment <i></i></b></div>
+            <div class="system-graphic"><div class="system-orbit orbit-one"></div><div class="system-orbit orbit-two"></div><div class="system-node node-core"><span>A</span><small>AMLOPA<br>ENGINE</small></div><div class="system-node node-left"><span>01</span><small>DATA</small></div><div class="system-node node-right"><span>02</span><small>AI</small></div><div class="system-node node-bottom"><span>03</span><small>PRODUCT</small></div><div class="system-path path-left"></div><div class="system-path path-right"></div><div class="system-path path-bottom"></div></div>
+            <div class="system-footer"><span>DESIGNED AROUND YOUR BUSINESS</span><span>● OPERATIONAL</span></div>
+          </div>
+            <span class="hero-float hero-float-one">AI / READY</span><span class="hero-float hero-float-two">SYSTEMS IN SYNC <i></i></span>
+          <div class="hero-product-caption"><span>From first principles</span><span>to products that work.</span></div>
+        </div>
+      </div>
+      <a class="hero-scroll" href="#solutions"><span>SCROLL TO EXPLORE</span><i></i></a>
+    </section>
+
+    <section class="digital-universe" aria-labelledby="universe-title">
+      <div class="page-width universe-layout">
+        <div class="universe-copy reveal"><span class="eyebrow">00 — A WORLD IN MOTION</span><h2 id="universe-title">THE DIGITAL WORLD<br>IS <span>CHANGING.</span></h2><p>From data to decisions to action.</p></div>
+        <div class="universe-flow reveal" aria-label="Data becomes intelligence, automation and business outcomes"><div class="universe-axis" aria-hidden="true"><i></i><i></i><i></i></div><span class="universe-word word-data">DATA</span><span class="universe-word word-intelligence">INTELLIGENCE</span><span class="universe-word word-automation">AUTOMATION</span><span class="universe-word word-business">BUSINESS</span><span class="universe-core" aria-hidden="true"><i></i><i></i><i></i><i></i><b>A</b></span><small class="universe-caption">SIGNAL → MEANING → MOMENTUM</small></div>
+      </div>
+    </section>
+
+    <section class="solutions section-light" id="solutions" aria-labelledby="solutions-title">
+      <div class="page-width section-inner">
+        <div class="section-heading reveal"><div><span class="eyebrow eyebrow-dark">01 — WHAT WE BUILD</span><h2 class="word-reveal" id="solutions-title" aria-label="We build intelligence into products."><span class="word-line"><span class="reveal-word">WE BUILD</span></span><span class="word-line"><span class="reveal-word">INTELLIGENCE</span></span><span class="word-line"><span class="reveal-word">INTO PRODUCTS.</span></span></h2></div><p>Software, AI and automation for real work.</p></div>
+        <div class="capability-grid">
+          <a class="capability-card reveal" href="#contact"><div class="capability-image"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=85" alt="Abstract artificial intelligence visualization" loading="lazy" decoding="async"><span class="capability-number">01</span><span class="capability-arrow">↗</span></div><div class="capability-copy"><h3>AI & Machine Learning</h3><p>Useful intelligence, integrated into the work.</p></div></a>
+          <a class="capability-card reveal" href="#contact"><div class="capability-image"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=85" alt="Team planning a digital software product" loading="lazy" decoding="async"><span class="capability-number">02</span><span class="capability-arrow">↗</span></div><div class="capability-copy"><h3>Custom Software</h3><p>Purpose-built tools shaped around your needs.</p></div></a>
+          <a class="capability-card reveal" href="#contact"><div class="capability-image"><img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=800&q=85" alt="Modern digital interface on a phone" loading="lazy" decoding="async"><span class="capability-number">03</span><span class="capability-arrow">↗</span></div><div class="capability-copy"><h3>Web Applications</h3><p>Fast, considered experiences for every screen.</p></div></a>
+          <a class="capability-card reveal" href="#contact"><div class="capability-image"><img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=85" alt="Mobile devices displaying a polished application" loading="lazy" decoding="async"><span class="capability-number">04</span><span class="capability-arrow">↗</span></div><div class="capability-copy"><h3>Mobile Applications</h3><p>Helpful experiences, close at hand.</p></div></a>
+          <a class="capability-card reveal" href="#contact"><div class="capability-image"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=85" alt="Analytics and business automation dashboard" loading="lazy" decoding="async"><span class="capability-number">05</span><span class="capability-arrow">↗</span></div><div class="capability-copy"><h3>Business Automation</h3><p>Less repetition. More room for meaningful work.</p></div></a>
+          <a class="capability-card reveal" href="#contact"><div class="capability-image"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=85" alt="Connected digital network around the globe" loading="lazy" decoding="async"><span class="capability-number">06</span><span class="capability-arrow">↗</span></div><div class="capability-copy"><h3>Digital Platforms</h3><p>Scalable foundations for what comes next.</p></div></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intelligence-section" id="ai" aria-labelledby="ai-title">
+      <div class="page-width intelligence-heading reveal"><span class="eyebrow">02 — AI & AUTOMATION</span><h2 id="ai-title">INTELLIGENCE, <span>ENGINEERED.</span></h2><p>Connect data to intelligence, then intelligence to useful action.</p></div>
+      <div class="page-width ai-story-grid">
+        <div class="ai-story-sticky reveal"><span class="ai-story-kicker">INTELLIGENCE, PUT TO WORK</span><h3>From signal<br>to <span>action.</span></h3><p>Four ways AI can support everyday work.</p><div class="ai-flow-label"><span>DATA</span><i>→</i><span>INTELLIGENCE</span><i>→</i><span>ACTION</span></div></div>
+        <div class="ai-story-steps">
+          <article class="ai-story-step is-active" data-ai-step="assistant" data-stage="01"><span>01 / RESPOND</span><h3>AI assistants</h3><p>Bring trusted answers closer to the people who need them.</p></article>
+          <article class="ai-story-step" data-ai-step="documents" data-stage="02"><span>02 / UNDERSTAND</span><h3>Document processing</h3><p>Extract key details and flag uncertain information for review.</p></article>
+          <article class="ai-story-step" data-ai-step="analytics" data-stage="03"><span>03 / INTERPRET</span><h3>Business analytics</h3><p>Turn operating signals into a clearer view of what matters.</p></article>
+          <article class="ai-story-step" data-ai-step="automation" data-stage="04"><span>04 / AUTOMATE</span><h3>Connected workflows</h3><p>Move routine steps between systems, with people in control.</p></article>
+        </div>
+        <div class="ai-visual-pin">
+          <div class="ai-story-visual" aria-live="polite">
+            <div class="neural-map" aria-hidden="true"><svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 8V91"/><path d="M50 28L18 42V58L50 72"/><path d="M50 28L82 42V58L50 72"/><circle class="neural-pulse pulse-a" r="1.5"><animateMotion dur="3.8s" repeatCount="indefinite" path="M50 8V91"/></circle><circle class="neural-pulse pulse-b" r="1.2"><animateMotion dur="4.8s" repeatCount="indefinite" path="M50 8L18 42V58L50 72"/></circle><circle class="neural-pulse pulse-c" r="1.2"><animateMotion dur="4.3s" repeatCount="indefinite" path="M50 28L82 42V58L50 72"/></circle></svg><span class="neural-node neural-input">INPUT<small>Business data</small></span><span class="neural-node neural-process">AI PROCESSING<small>Context + models</small></span><span class="neural-node neural-model">MODEL<small>Reasoning layer</small></span><span class="neural-node neural-analysis">ANALYSIS<small>Signals + insight</small></span><span class="neural-node neural-action">BUSINESS ACTION<small>Human-reviewed output</small></span></div>
+            <div class="ai-stage-preview" data-ai-visual="assistant"><div class="preview-label">AMLOPA ASSISTANT <span>GROUNDED IN YOUR KNOWLEDGE</span></div><div class="assistant-question">Where can I find the latest project brief?</div><div class="assistant-response"><i>✳</i><span><b>Here’s the current brief.</b><small>Operations / Project Atlas / Brief v3</small><em>Source verified · Updated today</em></span></div></div>
+            <div class="ai-stage-preview" data-ai-visual="documents" hidden><div class="preview-label">DOCUMENT INTELLIGENCE <span>HUMAN REVIEW ENABLED</span></div><div class="document-row"><i>▤</i><span><b>Supplier invoice 0842</b><small>Invoice · 2 pages · received just now</small></span><em>PROCESSING</em></div><div class="document-fields"><span>SUPPLIER <b>Northstar Supply</b></span><span>REFERENCE <b>INV-0842</b></span><span>AMOUNT <b>$4,820.00</b></span></div><div class="confidence-line"><span>EXTRACTION CONFIDENCE</span><b>REVIEW REQUIRED</b></div></div>
+            <div class="ai-stage-preview" data-ai-visual="analytics" hidden><div class="preview-label">OPERATIONS INTELLIGENCE <span>WEEKLY VIEW</span></div><div class="analytics-heading"><b>Workflow performance</b><span>Last 7 days⌄</span></div><div class="analytics-chart"><i></i><i></i><i></i><i></i><svg viewBox="0 0 500 130" preserveAspectRatio="none"><path d="M0 105C45 92 55 108 105 78S160 95 205 62 260 76 310 43 370 58 415 30 465 44 500 14"/></svg></div><div class="analytics-legend"><span>● COMPLETED WORK</span><span>● NEEDS ATTENTION</span></div></div>
+            <div class="ai-stage-preview" data-ai-visual="automation" hidden><div class="preview-label">CONNECTED AUTOMATION <span>WORKFLOW / 04</span></div><div class="automation-flow"><span><i>01</i><b>Request received</b><small>Form submission</small></span><i class="flow-connector"></i><span><i>02</i><b>Details verified</b><small>Rules + AI review</small></span><i class="flow-connector"></i><span><i>03</i><b>Team notified</b><small>Task created</small></span></div><div class="automation-footer"><span>HUMAN APPROVAL</span><b>REQUIRED BEFORE ACTION</b></div></div>
+            <div class="ai-visual-caption"><span id="ai-visual-index">01 / 04</span><span><b id="ai-visual-title">AI assistants</b><small id="ai-visual-description">Answer with context. Keep a person in control.</small></span><i>AMLOPA / INTELLIGENCE</i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="agent-section" id="agent" aria-labelledby="agent-title">
+      <div class="page-width agent-layout">
+        <div class="agent-intro reveal"><span class="eyebrow">03 — AMLOPA AI</span><h2 id="agent-title">An assistant that<br>knows when to <span>act.</span></h2><p>A human-guided path from request to result.</p><span class="agent-availability"><i></i> CONCEPT FLOW</span></div>
+        <div class="agent-interface reveal">
+          <div class="agent-nav"><span class="agent-brand">A<span>·</span> AMLOPA AI</span><span>AGENT SESSION / 001</span><span class="agent-online"><i></i> READY</span></div>
+          <div class="agent-main">
+            <div class="agent-stage-list" role="tablist" aria-label="AI agent stages">
+              <button class="agent-stage is-active" type="button" role="tab" aria-selected="true" data-agent-stage="0"><span>01</span><b>User request</b><i>↗</i></button>
+              <button class="agent-stage" type="button" role="tab" aria-selected="false" data-agent-stage="1"><span>02</span><b>Understanding</b><i>↗</i></button>
+              <button class="agent-stage" type="button" role="tab" aria-selected="false" data-agent-stage="2"><span>03</span><b>Reasoning</b><i>↗</i></button>
+              <button class="agent-stage" type="button" role="tab" aria-selected="false" data-agent-stage="3"><span>04</span><b>Tool execution</b><i>↗</i></button>
+              <button class="agent-stage" type="button" role="tab" aria-selected="false" data-agent-stage="4"><span>05</span><b>Result</b><i>↗</i></button>
+            </div>
+            <div class="agent-output" role="tabpanel" aria-live="polite"><span class="agent-output-label" id="agent-output-label">INCOMING REQUEST / TEXT</span><div class="agent-request" id="agent-request">“Find the latest project brief and share the current status.”</div><div class="agent-output-divider"><i></i><span id="agent-output-step">STEP 01 / 05</span></div><h3 id="agent-output-title">A person asks</h3><p id="agent-output-copy">The agent receives a natural-language request and keeps its intent attached to the task.</p><div class="agent-source"><span class="agent-source-mark">✳</span><span><b>AMLOPA AI</b><small>Connected to approved tools. Human review stays in the loop.</small></span><span class="agent-source-signal">●</span></div></div>
+          </div>
+          <div class="agent-progress"><span id="agent-progress-fill"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="automation-section" aria-labelledby="automation-title">
+      <div class="page-width automation-inner">
+        <div class="automation-intro reveal"><span class="eyebrow">04 — BUSINESS AUTOMATION</span><h2 id="automation-title">Let machines handle<br>the <span>repetition.</span></h2><p>Automate routine steps. Keep important decisions visible.</p></div>
+        <div class="automation-map reveal" aria-label="Illustrative automation path from customer request to completion">
+          <div class="automation-map-top"><span>WORKFLOW / CUSTOMER REQUEST</span><span><i></i> RUNNING</span></div>
+          <div class="automation-nodes"><div class="automation-node"><i>01</i><b>Customer<br>request</b><small>INTAKE</small></div><span class="automation-link"><i></i></span><div class="automation-node node-emphasis"><i>02</i><b>AI<br>understanding</b><small>INTERPRET</small></div><span class="automation-link"><i></i></span><div class="automation-node"><i>03</i><b>Business<br>logic</b><small>DECIDE</small></div><span class="automation-link"><i></i></span><div class="automation-node"><i>04</i><b>Data &<br>systems</b><small>CONNECT</small></div><span class="automation-link"><i></i></span><div class="automation-node node-complete"><i>05</i><b>Team<br>notified</b><small>COMPLETE</small></div></div>
+          <div class="automation-map-bottom"><span>HUMAN REVIEW AT THE RIGHT MOMENT</span><span>END-TO-END TRACEABILITY</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-section section-light" id="products" aria-labelledby="products-title">
+      <div class="page-width section-inner products-sticky">
+        <div class="section-heading reveal"><div><span class="eyebrow eyebrow-dark">03 — PRODUCT SHOWCASE</span><h2 id="products-title">Thoughtful ideas.<br>Made tangible.</h2></div><p>Four original concepts for practical business challenges.</p></div>
+        <div class="project-rail-window"><div class="products-list" id="products-track">
+          <article class="product-showcase reveal" data-project="flowos" data-name="FlowOS" data-problem="Teams often manage approvals, tasks and handoffs across disconnected tools." data-solution="A shared operations workspace that brings work status, ownership and next steps into one clear view." data-tech="React · Django · PostgreSQL · REST APIs">
+            <div class="product-art art-flow" role="img" aria-label="FlowOS concept: operations dashboard with workflow status and task metrics"><div class="mock-window"><div class="mock-top"><span class="mock-brand"><i></i> flowos</span><span>Workspace / Overview</span><span class="mock-avatar">AM</span></div><div class="mock-dashboard"><div class="mock-rail"><i></i><i></i><i></i><i></i></div><div class="mock-content"><span class="mock-eyebrow">MONDAY, 09:41</span><b class="mock-title">Good morning, Alex.</b><div class="mock-stats"><span><small>Open workflows</small><b>24</b><i>↑ 12% this week</i></span><span><small>Needs attention</small><b>03</b><i>Across 2 teams</i></span><span><small>Completed</small><b>186</b><i>This month</i></span></div><div class="mock-activity"><span><i class="activity-dot"></i><b>Quarterly review</b><small>Finance · due today</small><em>IN REVIEW</em></span><span><i class="activity-dot blue"></i><b>Client onboarding</b><small>Operations · updated 9:24</small><em class="activity-ready">ON TRACK</em></span><span><i class="activity-dot coral"></i><b>Vendor approval</b><small>Procurement · needs owner</small><em class="activity-wait">WAITING</em></span></div></div></div></div></div>
+            <div class="product-copy"><span class="project-label">CONCEPT 01 <i>·</i> DIGITAL OPERATIONS</span><h3>FlowOS</h3><p class="product-problem"><b>THE CHALLENGE</b>Work gets lost between tools, teams and handoffs.</p><p class="product-solution"><b>THE IDEA</b>A calmer command center for everyday operations.</p><div class="tech-tags"><span>React</span><span>Django</span><span>PostgreSQL</span></div><button class="view-project" type="button" data-project-open>View Project <span>↗</span></button></div>
+          </article>
+          <article class="product-showcase product-reverse reveal" data-project="synapse" data-name="Synapse Assist" data-problem="Customer teams spend too much time searching across internal documentation for consistent answers." data-solution="A knowledge-grounded assistant that finds relevant guidance and keeps a human in control of customer-facing responses." data-tech="Python · FastAPI · AI / ML · Cloud">
+            <div class="product-art art-synapse" role="img" aria-label="Synapse Assist concept: AI assistant with source-backed answers and team review"><div class="synapse-window"><div class="synapse-sidebar"><span class="synapse-mark">s<span>·</span></span><i>⌕</i><i>◫</i><i>⌘</i><i>⚙</i></div><div class="synapse-chat"><div class="synapse-header"><span><b>Support copilot</b><small>Knowledge base · 6 sources</small></span><i>● READY</i></div><div class="chat-date">TODAY, 10:08</div><div class="chat-bubble bubble-user">What is the return window for enterprise orders?</div><div class="chat-answer"><span class="answer-mark">✳</span><span><b>Based on your policies</b><p>Enterprise orders can be returned within 30 days of delivery, subject to the account terms.</p><small>Sources: Enterprise returns policy · Contract guide</small></span></div><div class="chat-review"><i></i> REVIEW BEFORE SENDING</div><div class="chat-input">Ask your knowledge base... <span>↑</span></div></div></div><span class="synapse-side-note">GROUNDED IN YOUR KNOWLEDGE</span></div>
+            <div class="product-copy"><span class="project-label">CONCEPT 02 <i>·</i> APPLIED AI</span><h3>Synapse Assist</h3><p class="product-problem"><b>THE CHALLENGE</b>Answers are buried across docs, wikis and conversations.</p><p class="product-solution"><b>THE IDEA</b>A source-aware assistant with human review built in.</p><div class="tech-tags"><span>Python</span><span>FastAPI</span><span>AI / ML</span></div><button class="view-project" type="button" data-project-open>View Project <span>↗</span></button></div>
+          </article>
+          <article class="product-showcase reveal" data-project="papertrail" data-name="Papertrail" data-problem="Important data arrives in inconsistent documents and has to be re-entered by hand." data-solution="A document intelligence flow that extracts key fields, flags uncertainty and routes items for human review." data-tech="Python · Django · PostgreSQL · AI / ML">
+            <div class="product-art art-paper" role="img" aria-label="Papertrail concept: document extraction and human review workflow"><div class="paper-app"><div class="paper-top"><span class="paper-brand">p<span>.</span> papertrail</span><span>DOCUMENT INBOX</span><span class="paper-profile">A</span></div><div class="paper-body"><div class="paper-list"><span class="paper-list-label">INBOX <i>12</i></span><span class="paper-list-item selected"><i>▤</i> Invoice 0842 <small>Just now</small></span><span class="paper-list-item"><i>▤</i> Purchase order <small>8 min</small></span><span class="paper-list-item"><i>▤</i> Shipping note <small>16 min</small></span></div><div class="paper-preview"><div class="invoice"><span>INVOICE</span><b>Northstar Supply</b><i>INV-0842</i><hr><small>Service and materials</small><small>Due 30 days</small><div class="invoice-total">TOTAL <b>$4,820.00</b></div></div><div class="extract-panel"><span>EXTRACTED FIELDS <i>● VERIFIED</i></span><small>SUPPLIER <b>Northstar Supply</b></small><small>INVOICE NUMBER <b>INV-0842</b></small><small>AMOUNT <b>$4,820.00</b></small><small>DUE DATE <b>14 OCT 2026</b></small><button type="button" tabindex="-1">Approve document ↗</button></div></div></div></div></div>
+            <div class="product-copy"><span class="project-label">CONCEPT 03 <i>·</i> DOCUMENT INTELLIGENCE</span><h3>Papertrail</h3><p class="product-problem"><b>THE CHALLENGE</b>Manual document entry slows down business-critical work.</p><p class="product-solution"><b>THE IDEA</b>Extract, validate and route documents for review.</p><div class="tech-tags"><span>Python</span><span>Django</span><span>AI / ML</span></div><button class="view-project" type="button" data-project-open>View Project <span>↗</span></button></div>
+          </article>
+          <article class="product-showcase product-reverse reveal" data-project="northstar" data-name="Northstar" data-problem="Leaders need a reliable view of business signals spread across multiple systems." data-solution="A connected analytics platform that brings operational metrics and decision-ready context into one view." data-tech="React · FastAPI · PostgreSQL · Cloud">
+            <div class="product-art art-northstar" role="img" aria-label="Northstar concept: business analytics dashboard with connected metrics"><div class="northstar-app"><div class="northstar-nav"><span>n<span>·</span></span><i class="nav-selected">◫</i><i>⌁</i><i>◷</i><i>⚙</i></div><div class="northstar-main"><div class="northstar-heading"><span><small>BUSINESS PULSE / OVERVIEW</small><b>Good afternoon, Alex.</b></span><i>LAST 30 DAYS⌄</i></div><div class="northstar-kpis"><div><small>OPERATING REVENUE</small><b>$284,920</b><i>↗ 8.4% vs last period</i></div><div><small>ACTIVE PROJECTS</small><b>18</b><i>3 need attention</i></div><div><small>TEAM CAPACITY</small><b>82<small>%</small></b><i>+6% this month</i></div></div><div class="northstar-chart"><div><b>Performance over time</b><small>Revenue · Utilization · Delivery</small></div><div class="chart-lines"><i></i><i></i><i></i><i></i><svg viewBox="0 0 500 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 82 C40 74 45 86 85 65 S145 74 180 50 235 66 275 39 325 52 360 29 420 40 450 18 480 29 500 7"/><path class="chart-secondary" d="M0 94 C45 88 60 78 95 82 S150 62 190 70 250 54 290 64 340 47 380 51 430 36 470 42 485 31 500 33"/></svg></div></div></div></div></div>
+            <div class="product-copy"><span class="project-label">CONCEPT 04 <i>·</i> DIGITAL PLATFORM</span><h3>Northstar</h3><p class="product-problem"><b>THE CHALLENGE</b>Business signals are scattered across too many systems.</p><p class="product-solution"><b>THE IDEA</b>One decision-ready view of the work that matters.</p><div class="tech-tags"><span>React</span><span>FastAPI</span><span>Cloud</span></div><button class="view-project" type="button" data-project-open>View Project <span>↗</span></button></div>
+          </article>
+        </div></div>
+        <div class="project-rail-footer"><span id="project-rail-count">01 <i>/</i> 04</span><div class="project-rail-progress"><i></i></div><span>SCROLL TO EXPLORE</span><button class="project-next magnetic" data-magnetic type="button" aria-label="Scroll to next project">↓</button></div>
+        <p class="concept-note"><span>NOTE</span> These are original concept showcases, not representations of completed client engagements.</p>
+      </div>
+    </section>
+
+    <section class="process-section section-light" aria-labelledby="process-title">
+      <div class="page-width section-inner">
+        <div class="section-heading reveal"><div><span class="eyebrow eyebrow-dark">05 — THE JOURNEY</span><h2 id="process-title">From first spark<br>to lasting scale.</h2></div><p>One clear path from idea to launch and beyond.</p></div>
+        <div class="process-track">
+          <article class="process-step reveal"><span class="step-number">01</span><i class="step-node"></i><h3>Idea</h3><p>Find the opportunity worth pursuing.</p></article>
+          <article class="process-step reveal"><span class="step-number">02</span><i class="step-node"></i><h3>Design</h3><p>Shape the experience and architecture.</p></article>
+          <article class="process-step reveal"><span class="step-number">03</span><i class="step-node"></i><h3>Engineering</h3><p>Build a strong, scalable foundation.</p></article>
+          <article class="process-step reveal"><span class="step-number">04</span><i class="step-node"></i><h3>AI</h3><p>Bring intelligence to useful moments.</p></article>
+          <article class="process-step reveal"><span class="step-number">05</span><i class="step-node"></i><h3>Automation</h3><p>Connect the work across systems.</p></article>
+          <article class="process-step reveal"><span class="step-number">06</span><i class="step-node"></i><h3>Launch</h3><p>Put the product into people’s hands.</p></article>
+          <article class="process-step reveal"><span class="step-number">07</span><i class="step-node"></i><h3>Scale</h3><p>Learn, improve and grow with purpose.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-section" id="about" aria-labelledby="why-title">
+      <div class="page-width why-layout">
+        <div class="why-heading reveal"><span class="eyebrow">06 — WHY AMLOPA</span><h2 id="why-title">Built with purpose.<br><span>Engineered to last.</span></h2><p>Start with the business need. Build for what comes next.</p><a class="button button-outline" href="#contact">Meet your technology partner <span>↗</span></a></div>
+        <div class="value-list">
+          <article class="value-item reveal"><span>01</span><div><h3>Business First</h3><p>Technology designed around real business problems and the people solving them.</p></div><i>↗</i></article>
+          <article class="value-item reveal"><span>02</span><div><h3>Modern Engineering</h3><p>Scalable, secure and maintainable foundations, made for the long term.</p></div><i>↗</i></article>
+          <article class="value-item reveal"><span>03</span><div><h3>AI Ready</h3><p>AI and automation integrated where they create meaningful, measurable value.</p></div><i>↗</i></article>
+          <article class="value-item reveal"><span>04</span><div><h3>Long-Term Support</h3><p>A steady partner for launches, learning and what the product needs next.</p></div><i>↗</i></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="technology-section section-light" aria-labelledby="technology-title">
+      <div class="page-width section-inner technology-layout">
+        <div class="technology-copy reveal"><span class="eyebrow eyebrow-dark">07 — FUTURE TECHNOLOGY</span><h2 id="technology-title">A considered<br>technology ecosystem.</h2><p>Tools chosen for reliability and room to grow.</p></div>
+        <div class="technology-system reveal">
+          <svg class="tech-connections" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M50 50L15 18M50 50L85 18M50 50L94 50M50 50L82 82M50 50L50 94M50 50L18 82M50 50L6 50M50 50L18 18M50 50L82 18M50 50L92 68"/><circle cx="50" cy="50" r="1.4"/><circle cx="15" cy="18" r=".8"/><circle cx="85" cy="18" r=".8"/><circle cx="94" cy="50" r=".8"/><circle cx="82" cy="82" r=".8"/><circle cx="50" cy="94" r=".8"/><circle cx="18" cy="82" r=".8"/><circle cx="6" cy="50" r=".8"/></svg>
+          <div class="technology-center"><span class="brand-symbol brand-symbol-large" aria-hidden="true"><i></i><i></i><i></i></span><b>AMLOPA <small>INDSRV</small></b><span>PRODUCT ENGINEERING</span></div><div class="technology-orbit orbit-back"></div><div class="technology-orbit orbit-front"></div><span class="technology-label tech-python">Python</span><span class="technology-label tech-django">Django</span><span class="technology-label tech-fastapi">FastAPI</span><span class="technology-label tech-react">React</span><span class="technology-label tech-postgres">PostgreSQL</span><span class="technology-label tech-mysql">MySQL</span><span class="technology-label tech-ai">AI / ML</span><span class="technology-label tech-cloud">Cloud</span><span class="technology-label tech-docker">Docker</span><span class="technology-label tech-rest">REST APIs</span><span class="technology-caption">DESIGNED TO WORK TOGETHER</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="analytics-section" aria-labelledby="analytics-title">
+      <div class="page-width analytics-layout">
+        <div class="analytics-copy reveal"><span class="eyebrow">08 — DATA VISUALIZATION</span><h2 id="analytics-title">See the signals.<br><span>Shape the next move.</span></h2><p>Bring business signals into one useful view.</p><span class="sample-data-note">CONCEPT DASHBOARD · SAMPLE DATA</span></div>
+        <div class="analytics-environment reveal" role="img" aria-label="Illustrative analytics dashboard with sample revenue, users, automation and performance metrics">
+          <div class="analytics-topline"><span>AMLOPA / SIGNALS</span><span>BUSINESS OVERVIEW <i>↗</i></span></div>
+          <div class="analytics-metrics"><div><small>REVENUE</small><b data-metric="284920">$0</b><i>↗ 8.4% sample period</i></div><div><small>USERS</small><b data-metric="18620">0</b><i>Across active products</i></div><div><small>AUTOMATION</small><b data-metric="4820">0</b><i>Tasks in this sample</i></div><div><small>PERFORMANCE</small><b data-metric="82" data-suffix="%">0%</b><i>System health</i></div></div>
+          <div class="analytics-graph"><div class="graph-title"><b>Activity over time</b><span>30 DAYS⌄</span></div><div class="graph-stage"><i></i><i></i><i></i><i></i><svg viewBox="0 0 600 180" preserveAspectRatio="none" aria-hidden="true"><path class="graph-line graph-line-a" d="M0 148C35 142 48 119 82 130S127 103 165 116 210 80 246 92 290 62 326 75 365 40 402 55 448 27 484 40 550 18 600 21"/><path class="graph-line graph-line-b" d="M0 160C38 151 66 154 98 139S152 146 183 127 229 133 261 116 307 129 344 104 392 114 421 91 475 103 506 76 557 88 600 62"/></svg><div class="graph-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="graph-key"><span>● BUSINESS SIGNALS</span><span>● AUTOMATED ACTIVITY</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="system-section" aria-labelledby="system-title">
+      <div class="page-width system-layout">
+        <div class="system-heading reveal"><span class="eyebrow">09 — AMLOPA SYSTEM</span><h2 id="system-title">One connected<br><span>technology universe.</span></h2><p>AI, software, data and operations. Working as one.</p></div>
+        <div class="system-constellation reveal" role="img" aria-label="AMLOPA connected to AI, software, automation, data, cloud, mobile, web and business">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M50 50L50 8M50 50L78 16M50 50L93 43M50 50L79 80M50 50L50 94M50 50L20 82M50 50L7 50M50 50L20 18"/><circle cx="50" cy="8" r=".6"/><circle cx="78" cy="16" r=".6"/><circle cx="93" cy="43" r=".6"/><circle cx="79" cy="80" r=".6"/><circle cx="50" cy="94" r=".6"/><circle cx="20" cy="82" r=".6"/><circle cx="7" cy="50" r=".6"/><circle cx="20" cy="18" r=".6"/></svg>
+          <div class="system-core-label">AMLOPA <small>INDSRV</small></div><span class="system-node-label system-ai">AI</span><span class="system-node-label system-software">SOFTWARE</span><span class="system-node-label system-automation">AUTOMATION</span><span class="system-node-label system-data">DATA</span><span class="system-node-label system-cloud">CLOUD</span><span class="system-node-label system-mobile">MOBILE</span><span class="system-node-label system-web">WEB</span><span class="system-node-label system-business">BUSINESS</span><span class="system-pulse" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <canvas class="final-canvas" id="final-canvas" aria-hidden="true"></canvas>
+      <div class="contact-grid page-width">
+        <div class="contact-copy reveal"><span class="eyebrow">10 — THE NEXT STEP</span><span class="final-particle-word" aria-hidden="true">AMLOPA</span><h2 id="contact-title">BUILD WHAT’S<br>NEXT.</h2><p>Turn your idea into intelligent technology.</p><div class="contact-direct-links" aria-label="Direct enquiry contacts"><a href="mailto:indsrvamlopa@gmail.com"><span>EMAIL</span><b>indsrvamlopa@gmail.com</b><i aria-hidden="true">↗</i></a><a href="tel:6382607244"><span>CALL</span><b>63826 07244</b><i aria-hidden="true">↗</i></a></div><div class="contact-mark"></div></div>
+        <form class="contact-form reveal" method="post" action="#contact">
+          {% csrf_token %}
+          <div class="form-heading"><span>START A PROJECT</span><small>Tell us a little about what you have in mind.</small></div>
+          <div class="form-row"><label for="{{ form.name.id_for_label }}">Name{{ form.name }}{% for error in form.name.errors %}<span class="field-error">{{ error }}</span>{% endfor %}</label><label for="{{ form.company.id_for_label }}">Company <small>OPTIONAL</small>{{ form.company }}{% for error in form.company.errors %}<span class="field-error">{{ error }}</span>{% endfor %}</label></div>
+          <div class="form-row"><label for="{{ form.email.id_for_label }}">Work email{{ form.email }}{% for error in form.email.errors %}<span class="field-error">{{ error }}</span>{% endfor %}</label><label for="{{ form.service.id_for_label }}">Area of interest{{ form.service }}{% for error in form.service.errors %}<span class="field-error">{{ error }}</span>{% endfor %}</label></div>
+          <label for="{{ form.message.id_for_label }}">What are you looking to build?{{ form.message }}<span class="field-meta"><span>{% for error in form.message.errors %}<span class="field-error">{{ error }}</span>{% endfor %}</span><span><b id="message-count">0</b> / 2000</span></span></label>
+          <button class="button button-light submit-button magnetic" data-magnetic type="submit">Start Your Project <span>→</span></button>
+          <p class="form-privacy">Your inquiry is stored so our team can review and respond.</p>
+        </form>
+      </div>
+      <div class="contact-ambient" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-width footer-main"><a class="brand footer-brand" href="#home"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-wordmark">AMLOPA <b>|</b> <small>INDSRV</small></span></a><p>Digital Products <i>·</i> AI <i>·</i> Software <i>·</i> Automation</p><div class="footer-links"><a href="#solutions">Solutions</a><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a><button type="button" data-legal-open="privacy">Privacy Policy</button><button type="button" data-legal-open="terms">Terms</button></div><div class="footer-social"><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a></div><small class="copyright">© {% now "Y" %} AMLOPA INDSRV. All rights reserved.</small></div>
+  </footer>
+
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title"><form method="dialog"><button class="dialog-close" aria-label="Close project details">×</button></form><span class="eyebrow">ILLUSTRATIVE CONCEPT</span><h2 id="project-dialog-title"></h2><div class="project-dialog-grid"><div><span>THE BUSINESS PROBLEM</span><p id="project-problem"></p></div><div><span>THE SOLUTION</span><p id="project-solution"></p></div></div><div class="project-dialog-tech"><span>TECHNOLOGY</span><p id="project-tech"></p></div><a class="button button-light" href="#contact" data-dialog-contact>Discuss a similar idea <span>↗</span></a></dialog>
+  <dialog class="legal-dialog" id="privacy-dialog" aria-labelledby="privacy-title"><form method="dialog"><button class="dialog-close" aria-label="Close privacy policy">×</button></form><span class="eyebrow">AMLOPA INDSRV</span><h2 id="privacy-title">Privacy Policy</h2><p>When you send a project inquiry, the details you provide are stored in the application database so the AMLOPA team can review and respond. Inquiry records are accessible to authorized site administrators. Do not include sensitive personal or confidential information in the message field.</p><p>For a question about information submitted through this site, use the project inquiry form and mention your request.</p></dialog>
+  <dialog class="legal-dialog" id="terms-dialog" aria-labelledby="terms-title"><form method="dialog"><button class="dialog-close" aria-label="Close terms">×</button></form><span class="eyebrow">AMLOPA INDSRV</span><h2 id="terms-title">Terms</h2><p>Website content is provided for general information. The product showcases are illustrative concepts and do not represent completed client projects or guarantees of specific outcomes.</p><p>Project scope, timing, deliverables and support are agreed separately for each engagement.</p></dialog>
+
+  <script src="{% static 'webapp/app.js' %}" defer></script>
+  <script type="module" src="{% static 'webapp/scene.js' %}"></script>
+</body>
+</html>
