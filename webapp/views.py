@@ -2,7 +2,6 @@ import logging
 
 from django.conf import settings
 from django.core.mail import EmailMessage
-from django.core.exceptions import ImproperlyConfigured
 from django.contrib import messages
 from django.shortcuts import redirect, render
 from .forms import ContactInquiryForm
@@ -30,8 +29,6 @@ def home(request):
 			reply_to=[inquiry.email],
 		)
 		try:
-			if not settings.EMAIL_HOST_PASSWORD:
-				raise ImproperlyConfigured('EMAIL_HOST_PASSWORD is not configured')
 			email.send(fail_silently=False)
 		except Exception:
 			logger.exception('Could not send notification for project inquiry %s', inquiry.pk)
