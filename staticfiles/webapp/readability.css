@@ -1,0 +1,52 @@
+body { font-size: 16px; }
+
+.primary-nav a,
+.header-cta,
+.button,
+.toast { font-size: 14px; }
+
+.eyebrow { font-size: 11px; }
+
+.hero-copy > p,
+.section-heading > p,
+.intelligence-copy > p,
+.universe-copy > p,
+.automation-intro > p,
+.system-heading > p,
+.analytics-copy > p,
+.agent-intro > p,
+.technology-copy > p,
+.contact-copy > p,
+.agent-output > p,
+.agent-request,
+.process-step p,
+.value-item p,
+.product-problem,
+.product-solution { font-size: 15px; line-height: 1.7; }
+
+.capability-copy p { font-size: 13px; line-height: 1.6; }
+
+.ai-story-step p,
+.ai-story-sticky > p { font-size: 14px; line-height: 1.65; }
+
+.project-label,
+.tech-tags span,
+.view-project,
+.project-rail-footer,
+.solutions-disclaimer,
+.concept-note { font-size: 11px; }
+
+.contact-form label { font-size: 14px; }
+.contact-form label > small { font-size: 12px; }
+.contact-form input,
+.contact-form select,
+.contact-form textarea { font-size: 16px; }
+
+.contact-direct-links span { font-size: 11px; }
+.contact-direct-links b { font-size: 14px; }
+
+.footer-main > p { font-size: 12px; }
+.footer-links a,
+.footer-links button,
+.footer-social a,
+.copyright { font-size: 11px; }

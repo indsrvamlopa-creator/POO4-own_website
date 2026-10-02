@@ -20,25 +20,14 @@ const progressBar = document.querySelector('.scroll-progress');
 const progressFill = progressBar.querySelector('span');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-const projectSection = document.querySelector('.products-section');
-const projectViewport = document.querySelector('.project-rail-window');
-const projectTrack = document.querySelector('#products-track');
-const projectCards = [...document.querySelectorAll('.product-showcase')];
-const projectCounter = document.querySelector('#project-rail-count');
-const projectProgress = document.querySelector('.project-rail-progress i');
-const projectNext = document.querySelector('.project-next');
 const aiSteps = [...document.querySelectorAll('.ai-story-step')];
 const aiPanels = [...document.querySelectorAll('[data-ai-visual]')];
 const aiVisualIndex = document.querySelector('#ai-visual-index');
 const aiVisualTitle = document.querySelector('#ai-visual-title');
 const aiVisualDescription = document.querySelector('#ai-visual-description');
-const projectDialog = document.querySelector('#project-dialog');
 const messageInput = document.querySelector('#id_message');
 const messageCount = document.querySelector('#message-count');
-let activeProjectIndex = 0;
-let railDistance = 0;
 let scrollFrame = 0;
-let railResizeFrame = 0;
 
 if (!reducedMotion) root.classList.add('motion-ready');
 
@@ -78,50 +67,14 @@ navigation.querySelectorAll('a').forEach((link) => {
 });
 
 document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') closeMenu();
+  if (event.key === 'Escape') {
+    closeMenu();
+    document.querySelectorAll('.product-detail-dialog[open]').forEach((dialog) => dialog.close());
+  }
 });
 
 function clamp(value, min, max) {
   return Math.min(Math.max(value, min), max);
-}
-
-function setupProjectRail() {
-  if (!projectSection || !projectTrack || !projectViewport) return;
-  const usePinnedRail = window.innerWidth > 760 && !reducedMotion;
-  if (!usePinnedRail) {
-    projectSection.classList.remove('rail-ready');
-    projectSection.style.removeProperty('height');
-    projectTrack.style.removeProperty('--rail-offset');
-    railDistance = 0;
-    updateActiveProject(0);
-    return;
-  }
-
-  projectSection.classList.add('rail-ready');
-  const stickyHeight = Math.max(1, window.innerHeight - header.offsetHeight);
-  railDistance = Math.max(0, projectTrack.scrollWidth - projectViewport.clientWidth);
-  projectSection.style.height = `${stickyHeight + railDistance}px`;
-  updateScrollState();
-}
-
-function updateActiveProject(index) {
-  const boundedIndex = clamp(index, 0, projectCards.length - 1);
-  activeProjectIndex = boundedIndex;
-  projectCards.forEach((card, cardIndex) => {
-    card.classList.toggle('is-active', cardIndex === boundedIndex);
-  });
-  projectCounter.textContent = `${String(boundedIndex + 1).padStart(2, '0')} / ${String(projectCards.length).padStart(2, '0')}`;
-}
-
-function updateRail(scrollPosition) {
-  if (!projectSection || !projectSection.classList.contains('rail-ready')) return;
-  const stickyHeight = Math.max(1, window.innerHeight - header.offsetHeight);
-  const scrollLength = Math.max(1, projectSection.offsetHeight - stickyHeight);
-  const sectionProgress = clamp((scrollPosition - projectSection.offsetTop) / scrollLength, 0, 1);
-  projectTrack.style.setProperty('--rail-offset', `${-railDistance * sectionProgress}px`);
-  projectProgress.style.transform = `scaleX(${sectionProgress})`;
-  const nextIndex = Math.min(projectCards.length - 1, Math.floor(sectionProgress * projectCards.length));
-  updateActiveProject(nextIndex);
 }
 
 function updateScrollState() {
@@ -141,7 +94,6 @@ function updateScrollState() {
     heroImage.style.setProperty('--hero-image-scale', (1.08 - heroProgress * .09).toFixed(3));
     heroImage.style.setProperty('--hero-image-y', `${heroProgress * 24}px`);
   }
-  updateRail(scrollPosition);
 }
 
 function requestScrollUpdate() {
@@ -150,15 +102,6 @@ function requestScrollUpdate() {
 }
 
 window.addEventListener('scroll', requestScrollUpdate, { passive: true });
-window.addEventListener('resize', () => {
-  if (railResizeFrame) window.cancelAnimationFrame(railResizeFrame);
-  railResizeFrame = window.requestAnimationFrame(() => {
-    railResizeFrame = 0;
-    setupProjectRail();
-  });
-});
-
-setupProjectRail();
 updateScrollState();
 
 const revealTargets = [...document.querySelectorAll('.reveal, .word-reveal')];
@@ -293,51 +236,20 @@ if ('IntersectionObserver' in window) {
   counters.forEach(animateCounter);
 }
 
-projectNext.addEventListener('click', () => {
-  const nextIndex = (activeProjectIndex + 1) % projectCards.length;
-  if (projectSection.classList.contains('rail-ready')) {
-    const stickyHeight = Math.max(1, window.innerHeight - header.offsetHeight);
-    const scrollLength = projectSection.offsetHeight - stickyHeight;
-    const progress = nextIndex / projectCards.length;
-    window.scrollTo({ top: projectSection.offsetTop + scrollLength * progress, behavior: reducedMotion ? 'auto' : 'smooth' });
-  } else {
-    const nextCard = projectCards[nextIndex];
-    projectTrack.scrollTo({ left: nextCard.offsetLeft, behavior: reducedMotion ? 'auto' : 'smooth' });
-  }
-});
-
-projectTrack.addEventListener('scroll', () => {
-  if (projectSection.classList.contains('rail-ready')) return;
-  const cardWidth = projectCards[0].getBoundingClientRect().width;
-  const index = Math.round(projectTrack.scrollLeft / Math.max(cardWidth, 1));
-  updateActiveProject(index);
-}, { passive: true });
-
-function setText(selector, value) {
-  document.querySelector(selector).textContent = value;
-}
-
-projectCards.forEach((card) => {
-  card.querySelector('[data-project-open]').addEventListener('click', () => {
-    setText('#project-dialog-title', card.dataset.name);
-    setText('#project-problem', card.dataset.problem);
-    setText('#project-solution', card.dataset.solution);
-    setText('#project-tech', card.dataset.tech);
-    projectDialog.showModal();
-  });
-});
-
-projectDialog.addEventListener('click', (event) => {
-  if (event.target === projectDialog) projectDialog.close();
-});
-projectDialog.querySelector('[data-dialog-contact]').addEventListener('click', () => projectDialog.close());
-
 document.querySelectorAll('[data-legal-open]').forEach((button) => {
   button.addEventListener('click', () => {
     document.querySelector(`#${button.dataset.legalOpen}-dialog`).showModal();
   });
 });
 document.querySelectorAll('.legal-dialog').forEach((dialog) => {
+  dialog.addEventListener('click', (event) => {
+    if (event.target === dialog) dialog.close();
+  });
+});
+
+document.querySelectorAll('[data-product-dialog]').forEach((button) => {
+  const dialog = document.getElementById(button.dataset.productDialog);
+  button.addEventListener('click', () => dialog.showModal());
   dialog.addEventListener('click', (event) => {
     if (event.target === dialog) dialog.close();
   });

@@ -25,6 +25,8 @@ const aiPanels = [...document.querySelectorAll('[data-ai-visual]')];
 const aiVisualIndex = document.querySelector('#ai-visual-index');
 const aiVisualTitle = document.querySelector('#ai-visual-title');
 const aiVisualDescription = document.querySelector('#ai-visual-description');
+const productSelectors = [...document.querySelectorAll('[data-product-select]')];
+const productPanels = [...document.querySelectorAll('[data-product-panel]')];
 const messageInput = document.querySelector('#id_message');
 const messageCount = document.querySelector('#message-count');
 let scrollFrame = 0;
@@ -114,6 +116,28 @@ if ('IntersectionObserver' in window && !reducedMotion) {
 } else {
   revealTargets.forEach((item) => item.classList.add('is-visible'));
 }
+
+productSelectors.forEach((button) => {
+  button.addEventListener('click', () => {
+    const selectedProduct = button.dataset.productSelect;
+    const selectedPanel = productPanels.find((panel) => panel.dataset.productPanel === selectedProduct);
+    if (!selectedPanel || selectedPanel.classList.contains('is-active')) return;
+
+    productSelectors.forEach((selector) => {
+      const isSelected = selector === button;
+      selector.classList.toggle('is-active', isSelected);
+      selector.setAttribute('aria-pressed', String(isSelected));
+    });
+    productPanels.forEach((panel) => {
+      const isSelected = panel === selectedPanel;
+      panel.hidden = !isSelected;
+      panel.classList.toggle('is-active', isSelected);
+      panel.classList.remove('is-entering');
+    });
+    selectedPanel.querySelectorAll('.reveal, .word-reveal').forEach((item) => item.classList.add('is-visible'));
+    requestAnimationFrame(() => selectedPanel.classList.add('is-entering'));
+  });
+});
 
 function setAiScene(step) {
   const scene = step.dataset.aiStep;

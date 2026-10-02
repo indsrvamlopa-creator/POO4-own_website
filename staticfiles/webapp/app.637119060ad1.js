@@ -25,6 +25,14 @@ const aiPanels = [...document.querySelectorAll('[data-ai-visual]')];
 const aiVisualIndex = document.querySelector('#ai-visual-index');
 const aiVisualTitle = document.querySelector('#ai-visual-title');
 const aiVisualDescription = document.querySelector('#ai-visual-description');
+const productSelectors = [...document.querySelectorAll('[data-product-select]')];
+const productPanels = [...document.querySelectorAll('[data-product-panel]')];
+const productSteps = [...document.querySelectorAll('[data-product-step]')];
+const productContent = document.querySelector('.product-content');
+const productControls = document.querySelector('.product-controls');
+const productCurrent = document.querySelector('[data-product-current]');
+const productProgress = document.querySelector('[data-product-progress]');
+const productProgressBar = document.querySelector('.product-progress');
 const messageInput = document.querySelector('#id_message');
 const messageCount = document.querySelector('#message-count');
 let scrollFrame = 0;
@@ -114,6 +122,56 @@ if ('IntersectionObserver' in window && !reducedMotion) {
 } else {
   revealTargets.forEach((item) => item.classList.add('is-visible'));
 }
+
+function selectProduct(index) {
+  if (!productSelectors.length) return;
+  const selectedIndex = (index + productSelectors.length) % productSelectors.length;
+  const selectedButton = productSelectors[selectedIndex];
+  const selectedPanel = productPanels.find((panel) => panel.dataset.productPanel === selectedButton.dataset.productSelect);
+  if (!selectedPanel) return;
+
+  productContent.hidden = false;
+  if (productControls) productControls.hidden = false;
+  productSelectors.forEach((button, buttonIndex) => {
+    const isSelected = buttonIndex === selectedIndex;
+    button.classList.toggle('is-active', isSelected);
+    button.setAttribute('aria-pressed', String(isSelected));
+  });
+  productPanels.forEach((panel) => {
+    const isSelected = panel === selectedPanel;
+    panel.hidden = !isSelected;
+    panel.classList.toggle('is-active', isSelected);
+    panel.classList.remove('is-entering');
+  });
+  if (productCurrent) productCurrent.textContent = String(selectedIndex + 1).padStart(2, '0');
+  if (productProgress) productProgress.style.transform = `scaleX(${(selectedIndex + 1) / productSelectors.length})`;
+  if (productProgressBar) productProgressBar.setAttribute('aria-valuenow', String(selectedIndex + 1));
+  selectedPanel.querySelectorAll('.reveal, .word-reveal').forEach((item) => item.classList.add('is-visible'));
+  requestAnimationFrame(() => {
+    const panelTop = selectedPanel.getBoundingClientRect().top + window.scrollY - 100;
+    selectedPanel.classList.add('is-entering');
+    window.scrollTo({ top: panelTop, behavior: reducedMotion ? 'auto' : 'smooth' });
+  });
+}
+
+productSelectors.forEach((button, index) => {
+  button.addEventListener('click', () => selectProduct(index));
+});
+productSteps.forEach((button) => {
+  button.addEventListener('click', () => {
+    const currentIndex = productSelectors.findIndex((selector) => selector.getAttribute('aria-pressed') === 'true');
+    selectProduct(currentIndex + Number(button.dataset.productStep));
+  });
+});
+document.querySelector('.product-selector')?.addEventListener('keydown', (event) => {
+  if (!['ArrowDown', 'ArrowRight', 'ArrowUp', 'ArrowLeft'].includes(event.key)) return;
+  event.preventDefault();
+  const currentIndex = productSelectors.indexOf(document.activeElement);
+  const direction = event.key === 'ArrowDown' || event.key === 'ArrowRight' ? 1 : -1;
+  const nextIndex = (currentIndex + direction + productSelectors.length) % productSelectors.length;
+  productSelectors[nextIndex].focus();
+  selectProduct(nextIndex);
+});
 
 function setAiScene(step) {
   const scene = step.dataset.aiStep;

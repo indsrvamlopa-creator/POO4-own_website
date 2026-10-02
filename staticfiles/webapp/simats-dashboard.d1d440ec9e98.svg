@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="65" y1="48" x2="1110" y2="738" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111D33"/>
+      <stop offset="1" stop-color="#080E1A"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="164" y1="124" x2="1018" y2="651" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#18253C"/>
+      <stop offset="1" stop-color="#101A2C"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="731" y1="306" x2="1020" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#78A9FF"/>
+      <stop offset="1" stop-color="#9B8CFF"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="920" y1="46" x2="1063" y2="304" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#657FFF" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#657FFF" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" stroke="#94B4F1" stroke-opacity=".055"/>
+    </pattern>
+    <filter id="shadow" x="96" y="70" width="1010" height="650" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+    <clipPath id="screen">
+      <rect x="116" y="92" width="968" height="576" rx="19"/>
+    </clipPath>
+  </defs>
+  <rect width="1200" height="760" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="760" rx="18" fill="url(#grid)"/>
+  <circle cx="1034" cy="118" r="204" fill="url(#glow)"/>
+  <circle cx="131" cy="689" r="230" fill="#3B6FD0" fill-opacity=".09" filter="url(#shadow)"/>
+  <g clip-path="url(#screen)">
+    <rect x="116" y="92" width="968" height="576" rx="19" fill="url(#panel)"/>
+    <path d="M116 151H1084" stroke="#778BAF" stroke-opacity=".2"/>
+    <rect x="139" y="111" width="23" height="23" rx="6" fill="#7EA5FF" fill-opacity=".18"/>
+    <path d="M144 122h13M150.5 116v12" stroke="#A9C3FF" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="173" y="127" fill="#E7EEFF" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.4">SIMATS</text>
+    <text x="252" y="127" fill="#7585A1" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.1">ACADEMIC MANAGEMENT</text>
+    <circle cx="1000" cy="122" r="13" fill="#24324A"/>
+    <path d="M1000 116v6l4 2" stroke="#AFC0DE" stroke-width="1.3" stroke-linecap="round"/>
+    <circle cx="1039" cy="122" r="13" fill="#849EF4"/>
+    <text x="1034" y="126" fill="#10192B" font-family="Arial,sans-serif" font-size="10" font-weight="700">A</text>
+    <rect x="116" y="152" width="177" height="516" fill="#10192A" fill-opacity=".75"/>
+    <path d="M293 152v516" stroke="#788BAE" stroke-opacity=".16"/>
+    <text x="139" y="184" fill="#70819F" font-family="Arial,sans-serif" font-size="8" font-weight="700" letter-spacing="1.5">CAMPUS</text>
+    <rect x="130" y="199" width="149" height="37" rx="7" fill="#6589E9" fill-opacity=".16"/>
+    <rect x="140" y="210" width="14" height="14" rx="4" fill="#83A5FF" fill-opacity=".24"/>
+    <path d="M144 217h6M147 214v6" stroke="#AFC5FF" stroke-width="1.2" stroke-linecap="round"/>
+    <text x="164" y="222" fill="#D8E4FF" font-family="Arial,sans-serif" font-size="10" font-weight="600">Overview</text>
+    <circle cx="147" cy="258" r="7" stroke="#7486A5" stroke-width="1.2"/>
+    <path d="M144 258h6m-3-3v6" stroke="#7486A5" stroke-width="1"/>
+    <text x="164" y="262" fill="#8796B0" font-family="Arial,sans-serif" font-size="10">Students</text>
+    <rect x="140" y="280" width="14" height="14" rx="4" stroke="#7486A5" stroke-width="1.2"/>
+    <circle cx="147" cy="285" r="2" stroke="#7486A5"/>
+    <path d="M143 291c1-3 7-3 8 0" stroke="#7486A5"/>
+    <text x="164" y="291" fill="#8796B0" font-family="Arial,sans-serif" font-size="10">Faculty</text>
+    <path d="M141 319h12v13h-12z" stroke="#7486A5" stroke-width="1.1"/>
+    <path d="M144 323h6m-6 3h6" stroke="#7486A5" stroke-linecap="round"/>
+    <text x="164" y="329" fill="#8796B0" font-family="Arial,sans-serif" font-size="10">Academics</text>
+    <path d="M142 358h11v13h-11z" stroke="#7486A5" stroke-width="1.1"/>
+    <path d="M145 362h5m-5 3h5" stroke="#7486A5" stroke-linecap="round"/>
+    <text x="164" y="368" fill="#8796B0" font-family="Arial,sans-serif" font-size="10">Assignments</text>
+    <path d="M141 397h13v12h-13z" stroke="#7486A5" stroke-width="1.1"/>
+    <path d="m144 403 2 2 5-5" stroke="#7486A5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="164" y="407" fill="#8796B0" font-family="Arial,sans-serif" font-size="10">Submissions</text>
+    <path d="M141 435h13v13h-13z" stroke="#7486A5" stroke-width="1.1"/>
+    <path d="M144 444l2-3 2 2 3-5" stroke="#7486A5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="164" y="446" fill="#8796B0" font-family="Arial,sans-serif" font-size="10">Evaluation</text>
+    <path d="M136 478h137" stroke="#788BAE" stroke-opacity=".17"/>
+    <text x="139" y="503" fill="#70819F" font-family="Arial,sans-serif" font-size="8" font-weight="700" letter-spacing="1.4">MANAGEMENT</text>
+    <circle cx="147" cy="531" r="6.5" stroke="#7486A5" stroke-width="1.2"/>
+    <path d="M147 527v8m-4-4h8" stroke="#7486A5" stroke-width="1"/>
+    <text x="164" y="535" fill="#8796B0" font-family="Arial,sans-serif" font-size="10">Departments</text>
+    <path d="M141 560h13m-13 4h13m-13 4h9" stroke="#7486A5" stroke-width="1.2" stroke-linecap="round"/>
+    <text x="164" y="568" fill="#8796B0" font-family="Arial,sans-serif" font-size="10">Reports</text>
+    <path d="M141 593h13v12h-13z" stroke="#7486A5" stroke-width="1.1"/>
+    <path d="M144 596h7m-7 3h5" stroke="#7486A5" stroke-linecap="round"/>
+    <text x="164" y="603" fill="#8796B0" font-family="Arial,sans-serif" font-size="10">Settings</text>
+    <text x="323" y="191" fill="#E7EEFF" font-family="Arial,sans-serif" font-size="19" font-weight="600">Academic overview</text>
+    <text x="323" y="212" fill="#8392AC" font-family="Arial,sans-serif" font-size="10">Your campus activity, connected in one place.</text>
+    <rect x="931" y="176" width="128" height="31" rx="6" fill="#1D2B41" stroke="#394B69"/>
+    <circle cx="947" cy="191" r="3" fill="#7EA5FF"/>
+    <text x="957" y="194" fill="#B5C4DE" font-family="Arial,sans-serif" font-size="8">Academic year</text>
+    <path d="m1042 189 3 3 3-3" stroke="#889AB8" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <g>
+      <rect x="323" y="237" width="220" height="91" rx="9" fill="#19263A" stroke="#34445D"/>
+      <rect x="340" y="254" width="29" height="29" rx="7" fill="#6E93F1" fill-opacity=".16"/>
+      <circle cx="354.5" cy="263" r="4" stroke="#98B5FF" stroke-width="1.2"/>
+      <path d="M347 276c1-5 14-5 15 0" stroke="#98B5FF" stroke-width="1.2"/>
+      <text x="381" y="265" fill="#91A0BA" font-family="Arial,sans-serif" font-size="9">Total students</text>
+      <text x="340" y="307" fill="#ECF2FF" font-family="Arial,sans-serif" font-size="22" font-weight="600">2,480</text>
+      <text x="478" y="306" fill="#7DD3B0" font-family="Arial,sans-serif" font-size="8">+12.8%</text>
+      <path d="m477 294 4-4 4 2 7-8" stroke="#7DD3B0" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g>
+      <rect x="558" y="237" width="220" height="91" rx="9" fill="#19263A" stroke="#34445D"/>
+      <rect x="575" y="254" width="29" height="29" rx="7" fill="#9D8AFF" fill-opacity=".16"/>
+      <circle cx="586" cy="263" r="3.3" stroke="#B6A9FF" stroke-width="1.2"/>
+      <circle cx="594" cy="264" r="2.6" stroke="#B6A9FF" stroke-width="1"/>
+      <path d="M580 275c1-5 12-5 13 0m0-7c4-1 7 1 8 4" stroke="#B6A9FF" stroke-width="1.1"/>
+      <text x="613" y="265" fill="#91A0BA" font-family="Arial,sans-serif" font-size="9">Faculty members</text>
+      <text x="575" y="307" fill="#ECF2FF" font-family="Arial,sans-serif" font-size="22" font-weight="600">126</text>
+      <text x="716" y="306" fill="#7DD3B0" font-family="Arial,sans-serif" font-size="8">+4.2%</text>
+      <path d="m715 294 4-3 4 2 7-6" stroke="#7DD3B0" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g>
+      <rect x="793" y="237" width="266" height="91" rx="9" fill="#19263A" stroke="#34445D"/>
+      <rect x="810" y="254" width="29" height="29" rx="7" fill="#5CC5C0" fill-opacity=".13"/>
+      <path d="M817 262h15v13h-15zm3 3h8m-8 3h8" stroke="#83DAD5" stroke-width="1.1" stroke-linecap="round"/>
+      <text x="848" y="265" fill="#91A0BA" font-family="Arial,sans-serif" font-size="9">Assignments to review</text>
+      <text x="810" y="307" fill="#ECF2FF" font-family="Arial,sans-serif" font-size="22" font-weight="600">18</text>
+      <rect x="991" y="292" width="49" height="19" rx="9.5" fill="#EDB967" fill-opacity=".12"/>
+      <text x="1001" y="305" fill="#EBC27B" font-family="Arial,sans-serif" font-size="8">PENDING</text>
+    </g>
+    <rect x="323" y="348" width="454" height="284" rx="9" fill="#172338" stroke="#33445E"/>
+    <text x="343" y="374" fill="#DDE7FA" font-family="Arial,sans-serif" font-size="11" font-weight="600">Academic activity</text>
+    <text x="343" y="391" fill="#7E8EA9" font-family="Arial,sans-serif" font-size="8">Institution-wide engagement / current term</text>
+    <rect x="666" y="360" width="91" height="23" rx="5" fill="#202E44"/>
+    <text x="679" y="375" fill="#A5B4CC" font-family="Arial,sans-serif" font-size="8">This semester</text>
+    <path d="M343 429h414M343 469h414M343 509h414M343 549h414M343 589h414" stroke="#8294B2" stroke-opacity=".13"/>
+    <path d="M351 570c42-5 53-34 88-30 34 5 42-43 78-38 32 4 53-40 83-30 34 11 47-25 76-19 29 7 42-31 74-40" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M351 570c42-5 53-34 88-30 34 5 42-43 78-38 32 4 53-40 83-30 34 11 47-25 76-19 29 7 42-31 74-40v176H351z" fill="url(#accent)" fill-opacity=".09"/>
+    <circle cx="598" cy="472" r="4" fill="#A6B9FF" stroke="#1C2A40" stroke-width="3"/>
+    <circle cx="750" cy="413" r="4" fill="#B39EFF" stroke="#1C2A40" stroke-width="3"/>
+    <text x="350" y="613" fill="#74849F" font-family="Arial,sans-serif" font-size="7">JAN</text>
+    <text x="433" y="613" fill="#74849F" font-family="Arial,sans-serif" font-size="7">FEB</text>
+    <text x="516" y="613" fill="#74849F" font-family="Arial,sans-serif" font-size="7">MAR</text>
+    <text x="599" y="613" fill="#74849F" font-family="Arial,sans-serif" font-size="7">APR</text>
+    <text x="682" y="613" fill="#74849F" font-family="Arial,sans-serif" font-size="7">MAY</text>
+    <rect x="793" y="348" width="266" height="284" rx="9" fill="#172338" stroke="#33445E"/>
+    <text x="813" y="374" fill="#DDE7FA" font-family="Arial,sans-serif" font-size="11" font-weight="600">Recent activity</text>
+    <text x="813" y="391" fill="#7E8EA9" font-family="Arial,sans-serif" font-size="8">Latest campus updates</text>
+    <circle cx="828" cy="427" r="13" fill="#668BE9" fill-opacity=".17"/>
+    <text x="824" y="431" fill="#A8BEFF" font-family="Arial,sans-serif" font-size="9" font-weight="700">A</text>
+    <text x="851" y="424" fill="#CFD9EB" font-family="Arial,sans-serif" font-size="9">Assignment submitted</text>
+    <text x="851" y="439" fill="#7E8EA9" font-family="Arial,sans-serif" font-size="7">Computer Science / Semester 4</text>
+    <rect x="990" y="415" width="49" height="17" rx="8" fill="#7898ED" fill-opacity=".14"/>
+    <text x="998" y="426" fill="#AFC3FF" font-family="Arial,sans-serif" font-size="6">IN REVIEW</text>
+    <path d="M813 453h226" stroke="#8294B2" stroke-opacity=".15"/>
+    <circle cx="828" cy="481" r="13" fill="#50BCAA" fill-opacity=".14"/>
+    <text x="824" y="485" fill="#86DDC8" font-family="Arial,sans-serif" font-size="9" font-weight="700">E</text>
+    <text x="851" y="478" fill="#CFD9EB" font-family="Arial,sans-serif" font-size="9">Evaluation completed</text>
+    <text x="851" y="493" fill="#7E8EA9" font-family="Arial,sans-serif" font-size="7">Mathematics / Semester 2</text>
+    <rect x="991" y="469" width="48" height="17" rx="8" fill="#55C5A5" fill-opacity=".12"/>
+    <text x="999" y="480" fill="#81D7B9" font-family="Arial,sans-serif" font-size="6">COMPLETE</text>
+    <path d="M813 507h226" stroke="#8294B2" stroke-opacity=".15"/>
+    <circle cx="828" cy="535" r="13" fill="#B386F3" fill-opacity=".14"/>
+    <text x="824" y="539" fill="#C8A5FF" font-family="Arial,sans-serif" font-size="9" font-weight="700">F</text>
+    <text x="851" y="532" fill="#CFD9EB" font-family="Arial,sans-serif" font-size="9">Faculty profile updated</text>
+    <text x="851" y="547" fill="#7E8EA9" font-family="Arial,sans-serif" font-size="7">Department of Engineering</text>
+    <path d="M813 561h226" stroke="#8294B2" stroke-opacity=".15"/>
+    <circle cx="828" cy="589" r="13" fill="#E9A866" fill-opacity=".13"/>
+    <text x="824" y="593" fill="#F3C286" font-family="Arial,sans-serif" font-size="9" font-weight="700">S</text>
+    <text x="851" y="586" fill="#CFD9EB" font-family="Arial,sans-serif" font-size="9">New student enrolled</text>
+    <text x="851" y="601" fill="#7E8EA9" font-family="Arial,sans-serif" font-size="7">Admissions / Undergraduate</text>
+    <rect x="130" y="632" width="149" height="22" rx="5" fill="#172238"/>
+    <circle cx="143" cy="643" r="3" fill="#69D0AD"/>
+    <text x="152" y="646" fill="#778AA8" font-family="Arial,sans-serif" font-size="7" letter-spacing=".6">ALL SYSTEMS CONNECTED</text>
+  </g>
+  <rect x="116.5" y="92.5" width="967" height="575" rx="18.5" stroke="#9AB7F5" stroke-opacity=".28"/>
+  <circle cx="1078" cy="94" r="2" fill="#AFC6FF"/>
+  <circle cx="1110" cy="126" r="1.5" fill="#AFC6FF" fill-opacity=".72"/>
+  <circle cx="94" cy="593" r="2" fill="#AFC6FF" fill-opacity=".75"/>
+</svg>

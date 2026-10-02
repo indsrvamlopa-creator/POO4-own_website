@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="{% static 'webapp/motion.css' %}">
   <link rel="stylesheet" href="{% static 'webapp/universe.css' %}">
   <link rel="stylesheet" href="{% static 'webapp/contact-links.css' %}">
+  <link rel="stylesheet" href="{% static 'webapp/readability.css' %}">
+  <link rel="stylesheet" href="{% static 'webapp/simats.css' %}">
   <script>document.documentElement.classList.add('js-enabled');</script>
 </head>
 <body>
@@ -143,29 +145,233 @@
       </div>
     </section>
 
-    <section class="products-section section-light" id="products" aria-labelledby="products-title">
-      <div class="page-width section-inner products-sticky">
-        <div class="section-heading reveal"><div><span class="eyebrow eyebrow-dark">03 — PRODUCT SHOWCASE</span><h2 id="products-title">Thoughtful ideas.<br>Made tangible.</h2></div><p>Four original concepts for practical business challenges.</p></div>
-        <div class="project-rail-window"><div class="products-list" id="products-track">
-          <article class="product-showcase reveal" data-project="flowos" data-name="FlowOS" data-problem="Teams often manage approvals, tasks and handoffs across disconnected tools." data-solution="A shared operations workspace that brings work status, ownership and next steps into one clear view." data-tech="React · Django · PostgreSQL · REST APIs">
-            <div class="product-art art-flow" role="img" aria-label="FlowOS concept: operations dashboard with workflow status and task metrics"><div class="mock-window"><div class="mock-top"><span class="mock-brand"><i></i> flowos</span><span>Workspace / Overview</span><span class="mock-avatar">AM</span></div><div class="mock-dashboard"><div class="mock-rail"><i></i><i></i><i></i><i></i></div><div class="mock-content"><span class="mock-eyebrow">MONDAY, 09:41</span><b class="mock-title">Good morning, Alex.</b><div class="mock-stats"><span><small>Open workflows</small><b>24</b><i>↑ 12% this week</i></span><span><small>Needs attention</small><b>03</b><i>Across 2 teams</i></span><span><small>Completed</small><b>186</b><i>This month</i></span></div><div class="mock-activity"><span><i class="activity-dot"></i><b>Quarterly review</b><small>Finance · due today</small><em>IN REVIEW</em></span><span><i class="activity-dot blue"></i><b>Client onboarding</b><small>Operations · updated 9:24</small><em class="activity-ready">ON TRACK</em></span><span><i class="activity-dot coral"></i><b>Vendor approval</b><small>Procurement · needs owner</small><em class="activity-wait">WAITING</em></span></div></div></div></div></div>
-            <div class="product-copy"><span class="project-label">CONCEPT 01 <i>·</i> DIGITAL OPERATIONS</span><h3>FlowOS</h3><p class="product-problem"><b>THE CHALLENGE</b>Work gets lost between tools, teams and handoffs.</p><p class="product-solution"><b>THE IDEA</b>A calmer command center for everyday operations.</p><div class="tech-tags"><span>React</span><span>Django</span><span>PostgreSQL</span></div><button class="view-project" type="button" data-project-open>View Project <span>↗</span></button></div>
-          </article>
-          <article class="product-showcase product-reverse reveal" data-project="synapse" data-name="Synapse Assist" data-problem="Customer teams spend too much time searching across internal documentation for consistent answers." data-solution="A knowledge-grounded assistant that finds relevant guidance and keeps a human in control of customer-facing responses." data-tech="Python · FastAPI · AI / ML · Cloud">
-            <div class="product-art art-synapse" role="img" aria-label="Synapse Assist concept: AI assistant with source-backed answers and team review"><div class="synapse-window"><div class="synapse-sidebar"><span class="synapse-mark">s<span>·</span></span><i>⌕</i><i>◫</i><i>⌘</i><i>⚙</i></div><div class="synapse-chat"><div class="synapse-header"><span><b>Support copilot</b><small>Knowledge base · 6 sources</small></span><i>● READY</i></div><div class="chat-date">TODAY, 10:08</div><div class="chat-bubble bubble-user">What is the return window for enterprise orders?</div><div class="chat-answer"><span class="answer-mark">✳</span><span><b>Based on your policies</b><p>Enterprise orders can be returned within 30 days of delivery, subject to the account terms.</p><small>Sources: Enterprise returns policy · Contract guide</small></span></div><div class="chat-review"><i></i> REVIEW BEFORE SENDING</div><div class="chat-input">Ask your knowledge base... <span>↑</span></div></div></div><span class="synapse-side-note">GROUNDED IN YOUR KNOWLEDGE</span></div>
-            <div class="product-copy"><span class="project-label">CONCEPT 02 <i>·</i> APPLIED AI</span><h3>Synapse Assist</h3><p class="product-problem"><b>THE CHALLENGE</b>Answers are buried across docs, wikis and conversations.</p><p class="product-solution"><b>THE IDEA</b>A source-aware assistant with human review built in.</p><div class="tech-tags"><span>Python</span><span>FastAPI</span><span>AI / ML</span></div><button class="view-project" type="button" data-project-open>View Project <span>↗</span></button></div>
-          </article>
-          <article class="product-showcase reveal" data-project="papertrail" data-name="Papertrail" data-problem="Important data arrives in inconsistent documents and has to be re-entered by hand." data-solution="A document intelligence flow that extracts key fields, flags uncertainty and routes items for human review." data-tech="Python · Django · PostgreSQL · AI / ML">
-            <div class="product-art art-paper" role="img" aria-label="Papertrail concept: document extraction and human review workflow"><div class="paper-app"><div class="paper-top"><span class="paper-brand">p<span>.</span> papertrail</span><span>DOCUMENT INBOX</span><span class="paper-profile">A</span></div><div class="paper-body"><div class="paper-list"><span class="paper-list-label">INBOX <i>12</i></span><span class="paper-list-item selected"><i>▤</i> Invoice 0842 <small>Just now</small></span><span class="paper-list-item"><i>▤</i> Purchase order <small>8 min</small></span><span class="paper-list-item"><i>▤</i> Shipping note <small>16 min</small></span></div><div class="paper-preview"><div class="invoice"><span>INVOICE</span><b>Northstar Supply</b><i>INV-0842</i><hr><small>Service and materials</small><small>Due 30 days</small><div class="invoice-total">TOTAL <b>$4,820.00</b></div></div><div class="extract-panel"><span>EXTRACTED FIELDS <i>● VERIFIED</i></span><small>SUPPLIER <b>Northstar Supply</b></small><small>INVOICE NUMBER <b>INV-0842</b></small><small>AMOUNT <b>$4,820.00</b></small><small>DUE DATE <b>14 OCT 2026</b></small><button type="button" tabindex="-1">Approve document ↗</button></div></div></div></div></div>
-            <div class="product-copy"><span class="project-label">CONCEPT 03 <i>·</i> DOCUMENT INTELLIGENCE</span><h3>Papertrail</h3><p class="product-problem"><b>THE CHALLENGE</b>Manual document entry slows down business-critical work.</p><p class="product-solution"><b>THE IDEA</b>Extract, validate and route documents for review.</p><div class="tech-tags"><span>Python</span><span>Django</span><span>AI / ML</span></div><button class="view-project" type="button" data-project-open>View Project <span>↗</span></button></div>
-          </article>
-          <article class="product-showcase product-reverse reveal" data-project="northstar" data-name="Northstar" data-problem="Leaders need a reliable view of business signals spread across multiple systems." data-solution="A connected analytics platform that brings operational metrics and decision-ready context into one view." data-tech="React · FastAPI · PostgreSQL · Cloud">
-            <div class="product-art art-northstar" role="img" aria-label="Northstar concept: business analytics dashboard with connected metrics"><div class="northstar-app"><div class="northstar-nav"><span>n<span>·</span></span><i class="nav-selected">◫</i><i>⌁</i><i>◷</i><i>⚙</i></div><div class="northstar-main"><div class="northstar-heading"><span><small>BUSINESS PULSE / OVERVIEW</small><b>Good afternoon, Alex.</b></span><i>LAST 30 DAYS⌄</i></div><div class="northstar-kpis"><div><small>OPERATING REVENUE</small><b>$284,920</b><i>↗ 8.4% vs last period</i></div><div><small>ACTIVE PROJECTS</small><b>18</b><i>3 need attention</i></div><div><small>TEAM CAPACITY</small><b>82<small>%</small></b><i>+6% this month</i></div></div><div class="northstar-chart"><div><b>Performance over time</b><small>Revenue · Utilization · Delivery</small></div><div class="chart-lines"><i></i><i></i><i></i><i></i><svg viewBox="0 0 500 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 82 C40 74 45 86 85 65 S145 74 180 50 235 66 275 39 325 52 360 29 420 40 450 18 480 29 500 7"/><path class="chart-secondary" d="M0 94 C45 88 60 78 95 82 S150 62 190 70 250 54 290 64 340 47 380 51 430 36 470 42 485 31 500 33"/></svg></div></div></div></div></div>
-            <div class="product-copy"><span class="project-label">CONCEPT 04 <i>·</i> DIGITAL PLATFORM</span><h3>Northstar</h3><p class="product-problem"><b>THE CHALLENGE</b>Business signals are scattered across too many systems.</p><p class="product-solution"><b>THE IDEA</b>One decision-ready view of the work that matters.</p><div class="tech-tags"><span>React</span><span>FastAPI</span><span>Cloud</span></div><button class="view-project" type="button" data-project-open>View Project <span>↗</span></button></div>
-          </article>
-        </div></div>
-        <div class="project-rail-footer"><span id="project-rail-count">01 <i>/</i> 04</span><div class="project-rail-progress"><i></i></div><span>SCROLL TO EXPLORE</span><button class="project-next magnetic" data-magnetic type="button" aria-label="Scroll to next project">↓</button></div>
-        <p class="concept-note"><span>NOTE</span> These are original concept showcases, not representations of completed client engagements.</p>
+    <section class="products-section section-light simats-section" id="products" aria-labelledby="products-title">
+      <div class="page-width section-inner simats-page">
+        <div class="section-heading reveal">
+          <div><span class="eyebrow eyebrow-dark">03 &mdash; DIGITAL PRODUCT UNIVERSE</span><h2 id="products-title">Our Products</h2></div>
+          <p>Explore products for education, on-demand delivery, AI-assisted healthcare, and mental wellbeing.</p>
+        </div>
+        <div class="product-grid">
+        <article class="simats-project product-card reveal">
+          <button class="product-card-summary" type="button" aria-haspopup="dialog" aria-controls="simats-product-dialog" data-product-dialog="simats-product-dialog">
+            <span class="product-card-top"><span class="product-card-icon">S</span><span class="product-card-index">01 / EDUCATION</span></span>
+            <span class="product-card-title">SIMATS</span>
+            <span class="product-card-description">A connected digital campus for smarter academic management.</span>
+            <span class="product-card-tags"><span>Django</span><span>Education</span></span>
+            <span class="product-card-action">Explore product <i aria-hidden="true">+</i></span>
+          </button>
+          <dialog class="product-detail-dialog" id="simats-product-dialog" aria-labelledby="simats-project-title">
+          <form method="dialog"><button class="product-detail-close" aria-label="Close SIMATS details">×</button></form>
+          <div class="simats-project-hero">
+            <div class="simats-project-intro">
+              <span class="simats-project-status"><i></i> DIGITAL CAMPUS PLATFORM</span>
+              <div class="simats-project-brand" aria-hidden="true"><span>S</span><small>SIMATS / 01</small></div>
+              <h3 id="simats-project-title">SIMATS <span>&mdash; Smart Academic Management Platform</span></h3>
+              <h4>Empowering Education Through Digital Intelligence</h4>
+              <p><strong>SIMATS</strong> is a modern academic management platform designed to simplify and digitize educational workflows through a centralized, user-friendly system.</p>
+              <p>The platform brings students, faculty, and administrators together in one connected digital environment, helping institutions manage academic activities, information, and day-to-day operations more efficiently.</p>
+              <div class="simats-tech-stack" aria-label="Technology used">
+                <span>Python</span><span>Django</span><span>Django REST Framework</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>MySQL / PostgreSQL</span>
+              </div>
+            </div>
+            <figure class="simats-project-visual">
+              <img src="{% static 'webapp/simats-dashboard.svg' %}" alt="Illustrated SIMATS academic dashboard showing student and faculty records, academic activity, and connected campus tools" width="1200" height="760" loading="lazy">
+              <figcaption><span>SIMATS / ACADEMIC OVERVIEW</span><span>CONNECTED CAMPUS SYSTEM</span></figcaption>
+            </figure>
+          </div>
+          <div class="simats-project-lower">
+            <section class="simats-project-highlights" aria-labelledby="simats-highlights-title">
+              <span class="simats-project-kicker">ONE CONNECTED CAMPUS</span>
+              <h4 id="simats-highlights-title">Key Highlights</h4>
+              <ul>
+                <li><span aria-hidden="true">01</span>Digital student management</li>
+                <li><span aria-hidden="true">02</span>Faculty management</li>
+                <li><span aria-hidden="true">03</span>Academic workflow management</li>
+                <li><span aria-hidden="true">04</span>Online problem and assignment management</li>
+                <li><span aria-hidden="true">05</span>Digital submission management</li>
+                <li><span aria-hidden="true">06</span>Academic evaluation and tracking</li>
+                <li><span aria-hidden="true">07</span>Secure user authentication</li>
+                <li><span aria-hidden="true">08</span>Dedicated dashboards</li>
+                <li><span aria-hidden="true">09</span>Centralized data management</li>
+                <li><span aria-hidden="true">10</span>Real-time academic insights</li>
+              </ul>
+            </section>
+            <div class="simats-project-vision">
+              <span class="simats-project-kicker">BUILT FOR MODERN EDUCATION</span>
+              <h4>Less admin. More connected learning.</h4>
+              <p>SIMATS focuses on reducing manual academic processes and creating a more connected digital experience for educational institutions.</p>
+              <p>With a scalable architecture and modern web technologies, the platform can be extended with advanced analytics, AI-powered learning tools, automated evaluation, notifications, and other intelligent education services.</p>
+              <blockquote><span>THE VISION</span>From traditional academic workflows to a smarter, connected digital campus.</blockquote>
+              <p class="simats-project-summary">SIMATS demonstrates how technology can transform everyday educational processes into a streamlined and data-driven digital experience.</p>
+            </div>
+          </div>
+          </dialog>
+        </article>
+        <article class="simats-project product-card reveal">
+          <button class="product-card-summary" type="button" aria-haspopup="dialog" aria-controls="quick-commerce-product-dialog" data-product-dialog="quick-commerce-product-dialog">
+            <span class="product-card-top"><span class="product-card-icon">Q</span><span class="product-card-index">02 / COMMERCE</span></span>
+            <span class="product-card-title">Quick Commerce</span>
+            <span class="product-card-description">Local stores, easy ordering, and delivery to your doorstep.</span>
+            <span class="product-card-tags"><span>Django</span><span>Android</span></span>
+            <span class="product-card-action">Explore product <i aria-hidden="true">+</i></span>
+          </button>
+          <dialog class="product-detail-dialog" id="quick-commerce-product-dialog" aria-labelledby="quick-commerce-project-title">
+          <form method="dialog"><button class="product-detail-close" aria-label="Close Quick Commerce details">×</button></form>
+          <div class="simats-project-hero">
+            <div class="simats-project-intro">
+              <span class="simats-project-status"><i></i> ON-DEMAND DELIVERY PLATFORM</span>
+              <div class="simats-project-brand" aria-hidden="true"><span>Q</span><small>QUICK COMMERCE / 02</small></div>
+              <h3 id="quick-commerce-project-title">Quick Commerce <span>&mdash; Delivery Platform</span></h3>
+              <h4>From Local Stores to Your Doorstep &mdash; Faster, Smarter, Simpler.</h4>
+              <p>A modern quick-commerce and delivery management platform connecting customers, local stores, delivery partners, and administrators through one seamless digital ecosystem.</p>
+              <p>From product discovery and cart management to order processing and delivery operations, the platform helps businesses manage an end-to-end on-demand shopping experience.</p>
+              <div class="simats-tech-stack" aria-label="Technology used">
+                <span>Python</span><span>Django</span><span>Django REST Framework</span><span>JWT</span><span>MySQL</span><span>REST APIs</span><span>Android</span><span>Razorpay</span>
+              </div>
+            </div>
+            <figure class="simats-project-visual">
+              <img src="{% static 'webapp/quick-commerce-dashboard.svg' %}" alt="Illustrated quick-commerce operations dashboard showing orders, inventory, delivery partners, and the customer-to-doorstep workflow" width="1200" height="760" loading="lazy">
+              <figcaption><span>QUICK COMMERCE / OPERATIONS</span><span>CUSTOMER TO DOORSTEP</span></figcaption>
+            </figure>
+          </div>
+          <div class="simats-project-lower">
+            <section class="simats-project-highlights" aria-labelledby="quick-commerce-highlights-title">
+              <span class="simats-project-kicker">ONE CONNECTED DELIVERY ECOSYSTEM</span>
+              <h4 id="quick-commerce-highlights-title">Key Highlights</h4>
+              <ul>
+                <li><span aria-hidden="true">01</span>Smart product browsing and categories</li>
+                <li><span aria-hidden="true">02</span>Product and inventory management</li>
+                <li><span aria-hidden="true">03</span>Shopping cart and quantity management</li>
+                <li><span aria-hidden="true">04</span>Customer registration and authentication</li>
+                <li><span aria-hidden="true">05</span>Dedicated delivery partner application</li>
+                <li><span aria-hidden="true">06</span>Assigned-order delivery management</li>
+                <li><span aria-hidden="true">07</span>Order management and real-time workflow</li>
+                <li><span aria-hidden="true">08</span>Razorpay payment gateway integration</li>
+                <li><span aria-hidden="true">09</span>Centralized admin dashboard and analytics</li>
+                <li><span aria-hidden="true">10</span>Delivery tracking and operations</li>
+              </ul>
+            </section>
+            <div class="simats-project-vision">
+              <span class="simats-project-kicker">BUILT FOR QUICK COMMERCE</span>
+              <h4>One platform. Three experiences.</h4>
+              <p><strong>Customer app:</strong> Browse products, manage a cart, place orders, and follow the delivery process.</p>
+              <p><strong>Delivery partner app:</strong> Log in securely, access assigned orders, and manage delivery operations. <strong>Admin dashboard:</strong> Manage products, categories, customers, delivery partners, orders, inventory, and business operations.</p>
+              <blockquote><span>THE VISION</span>Customer → Order → Admin → Delivery Partner → Doorstep</blockquote>
+              <p class="simats-project-summary">A connected platform that brings local stores and customers together through smarter ordering, payments, and delivery management.</p>
+            </div>
+          </div>
+          </dialog>
+        </article>
+        <article class="simats-project product-card reveal">
+          <button class="product-card-summary" type="button" aria-haspopup="dialog" aria-controls="kidney-stone-product-dialog" data-product-dialog="kidney-stone-product-dialog">
+            <span class="product-card-top"><span class="product-card-icon">K</span><span class="product-card-index">03 / AI HEALTHCARE</span></span>
+            <span class="product-card-title">AI Kidney Stone</span>
+            <span class="product-card-description">Computer vision for AI-assisted medical image screening.</span>
+            <span class="product-card-tags"><span>AI / ML</span><span>OpenCV</span></span>
+            <span class="product-card-action">Explore product <i aria-hidden="true">+</i></span>
+          </button>
+          <dialog class="product-detail-dialog" id="kidney-stone-product-dialog" aria-labelledby="kidney-stone-project-title">
+          <form method="dialog"><button class="product-detail-close" aria-label="Close AI Kidney Stone details">×</button></form>
+          <div class="simats-project-hero">
+            <div class="simats-project-intro">
+              <span class="simats-project-status"><i></i> AI-ASSISTED SCREENING / RESEARCH</span>
+              <div class="simats-project-brand" aria-hidden="true"><span>K</span><small>IMAGE ANALYSIS / 03</small></div>
+              <h3 id="kidney-stone-project-title">AI Kidney Stone <span>&mdash; Prediction Platform</span></h3>
+              <h4>AI-Powered Medical Image Analysis for Smarter Screening</h4>
+              <p>An intelligent healthcare application designed to assist with kidney stone detection by analyzing submitted medical images using artificial intelligence and computer vision.</p>
+              <p>Automated image processing and machine learning analyze image patterns to generate a prediction that can support healthcare professionals during initial screening.</p>
+              <div class="simats-tech-stack" aria-label="Technology used">
+                <span>Python</span><span>Django</span><span>Django REST Framework</span><span>TensorFlow / Keras</span><span>OpenCV</span><span>Machine Learning</span><span>REST API</span>
+              </div>
+            </div>
+            <figure class="simats-project-visual">
+              <img src="{% static 'webapp/kidney-stone-analysis.svg' %}" alt="Illustrative AI medical image analysis interface for screening research, showing an uploaded scan and image-feature visualization" width="1200" height="760" loading="lazy">
+              <figcaption><span>AI IMAGE ANALYSIS / SCREENING SUPPORT</span><span>ILLUSTRATIVE INTERFACE</span></figcaption>
+            </figure>
+          </div>
+          <div class="simats-project-lower">
+            <section class="simats-project-highlights" aria-labelledby="kidney-stone-highlights-title">
+              <span class="simats-project-kicker">FROM IMAGE TO INFORMED REVIEW</span>
+              <h4>Key Highlights</h4>
+              <ul>
+                <li><span aria-hidden="true">01</span>AI-powered medical image analysis</li>
+                <li><span aria-hidden="true">02</span>Kidney stone detection support</li>
+                <li><span aria-hidden="true">03</span>Medical image upload</li>
+                <li><span aria-hidden="true">04</span>Computer vision-based analysis</li>
+                <li><span aria-hidden="true">05</span>Machine learning predictions</li>
+                <li><span aria-hidden="true">06</span>Prediction results dashboard</li>
+                <li><span aria-hidden="true">07</span>Automated image processing</li>
+                <li><span aria-hidden="true">08</span>Secure user access</li>
+                <li><span aria-hidden="true">09</span>Digital result management</li>
+                <li><span aria-hidden="true">10</span>API-based healthcare integration</li>
+              </ul>
+            </section>
+            <div class="simats-project-vision">
+              <span class="simats-project-kicker">BUILT FOR INTELLIGENT HEALTHCARE</span>
+              <h4>From medical images to intelligent insights.</h4>
+              <p>Uploaded medical images pass through automated AI processing and feature analysis before a trained machine learning model generates its prediction.</p>
+              <blockquote><span>HOW IT WORKS</span>Upload Medical Image → AI Image Processing → Feature Analysis → Model Prediction → Result</blockquote>
+              <p class="simats-project-summary"><strong>Screening and research support only:</strong> this prediction is not a replacement for professional medical diagnosis. Qualified healthcare professionals should make all final diagnosis and treatment decisions.</p>
+            </div>
+          </div>
+          </dialog>
+        </article>
+        <article class="simats-project product-card reveal">
+          <button class="product-card-summary" type="button" aria-haspopup="dialog" aria-controls="solace-product-dialog" data-product-dialog="solace-product-dialog">
+            <span class="product-card-top"><span class="product-card-icon">S</span><span class="product-card-index">04 / WELLBEING</span></span>
+            <span class="product-card-title">Solace</span>
+            <span class="product-card-description">An AI wellness companion for reflection and everyday support.</span>
+            <span class="product-card-tags"><span>RAG / AI</span><span>Django</span></span>
+            <span class="product-card-action">Explore product <i aria-hidden="true">+</i></span>
+          </button>
+          <dialog class="product-detail-dialog" id="solace-product-dialog" aria-labelledby="solace-project-title">
+          <form method="dialog"><button class="product-detail-close" aria-label="Close Solace details">×</button></form>
+          <div class="simats-project-hero">
+            <div class="simats-project-intro">
+              <span class="simats-project-status"><i></i> AI MENTAL WELLNESS COMPANION</span>
+              <div class="simats-project-brand" aria-hidden="true"><span>S</span><small>SOLACE / 04</small></div>
+              <h3 id="solace-project-title">Solace <span>&mdash; AI-Powered Mental Wellness Companion</span></h3>
+              <h4>A welcoming space for reflection, support, and everyday wellbeing.</h4>
+              <p>Solace is an AI-powered mental wellness chatbot designed to make personalized emotional support more accessible through thoughtful conversations and a simple, user-friendly experience.</p>
+              <p>Alongside AI chat, the platform brings together mood tracking, journaling, gratitude, mindfulness, self-care activities, and crisis support resources to help users reflect on their emotional wellbeing.</p>
+              <div class="simats-tech-stack" aria-label="Technology used">
+                <span>HTML</span><span>CSS</span><span>Django</span><span>MySQL</span><span>RAG / AI</span>
+              </div>
+            </div>
+            <figure class="simats-project-visual">
+              <img src="{% static 'webapp/solace-companion.svg' %}" alt="Illustrative Solace mental wellness companion interface with an AI chat, mood check-in, journaling, mindfulness, and support resources" width="1200" height="760" loading="lazy">
+              <figcaption><span>SOLACE / WELLNESS COMPANION</span><span>ILLUSTRATIVE INTERFACE</span></figcaption>
+            </figure>
+          </div>
+          <div class="simats-project-lower">
+            <section class="simats-project-highlights" aria-labelledby="solace-highlights-title">
+              <span class="simats-project-kicker">SUPPORT FOR EVERYDAY WELLBEING</span>
+              <h4 id="solace-highlights-title">Key Highlights</h4>
+              <ul>
+                <li><span aria-hidden="true">01</span>AI-powered conversations</li>
+                <li><span aria-hidden="true">02</span>Personalized emotional support</li>
+                <li><span aria-hidden="true">03</span>Mood tracking and insights</li>
+                <li><span aria-hidden="true">04</span>Journaling and reflection</li>
+                <li><span aria-hidden="true">05</span>Gratitude practice</li>
+                <li><span aria-hidden="true">06</span>Mindfulness activities</li>
+                <li><span aria-hidden="true">07</span>Self-care support</li>
+                <li><span aria-hidden="true">08</span>Crisis support resources</li>
+                <li><span aria-hidden="true">09</span>24/7 companion experience</li>
+                <li><span aria-hidden="true">10</span>Simple, user-friendly design</li>
+              </ul>
+            </section>
+            <div class="simats-project-vision">
+              <span class="simats-project-kicker">BUILT AROUND A SPACE TO TALK</span>
+              <h4>Small moments of support can matter.</h4>
+              <p>Solace brings conversation, mood awareness, journaling, gratitude, and mindfulness into one approachable digital companion for everyday reflection.</p>
+              <blockquote><span>THE IDEA</span>Sometimes, having a space to talk can make a difference.</blockquote>
+              <p class="simats-project-summary"><strong>Support, not a substitute for care:</strong> Solace is not a medical service, therapist, or emergency response. For immediate danger or a crisis, contact local emergency services or a qualified crisis support provider.</p>
+            </div>
+          </div>
+          </dialog>
+        </article>
+        </div>
+        </div>
       </div>
     </section>
 
@@ -246,12 +452,11 @@
   </main>
 
   <footer class="site-footer">
-    <div class="page-width footer-main"><a class="brand footer-brand" href="#home"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-wordmark">AMLOPA <b>|</b> <small>INDSRV</small></span></a><p>Digital Products <i>·</i> AI <i>·</i> Software <i>·</i> Automation</p><div class="footer-links"><a href="#solutions">Solutions</a><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a><button type="button" data-legal-open="privacy">Privacy Policy</button><button type="button" data-legal-open="terms">Terms</button></div><div class="footer-social"><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a></div><small class="copyright">© {% now "Y" %} AMLOPA INDSRV. All rights reserved.</small></div>
+    <div class="page-width footer-main"><a class="brand footer-brand" href="#home"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-wordmark">AMLOPA <b>|</b> <small>INDSRV</small></span></a><p>Digital Products <i>·</i> AI <i>·</i> Software <i>·</i> Automation</p><div class="footer-links"><a href="#solutions">Solutions</a><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a><button type="button" data-legal-open="privacy">Privacy Policy</button><button type="button" data-legal-open="terms">Terms</button></div><div class="footer-social"><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://www.linkedin.com/in/amlopa-indsrv-822393440/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/indsrvamlopa-creator" target="_blank" rel="noreferrer">GitHub ↗</a></div><small class="copyright">© {% now "Y" %} AMLOPA INDSRV. All rights reserved.</small></div>
   </footer>
 
-  <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title"><form method="dialog"><button class="dialog-close" aria-label="Close project details">×</button></form><span class="eyebrow">ILLUSTRATIVE CONCEPT</span><h2 id="project-dialog-title"></h2><div class="project-dialog-grid"><div><span>THE BUSINESS PROBLEM</span><p id="project-problem"></p></div><div><span>THE SOLUTION</span><p id="project-solution"></p></div></div><div class="project-dialog-tech"><span>TECHNOLOGY</span><p id="project-tech"></p></div><a class="button button-light" href="#contact" data-dialog-contact>Discuss a similar idea <span>↗</span></a></dialog>
   <dialog class="legal-dialog" id="privacy-dialog" aria-labelledby="privacy-title"><form method="dialog"><button class="dialog-close" aria-label="Close privacy policy">×</button></form><span class="eyebrow">AMLOPA INDSRV</span><h2 id="privacy-title">Privacy Policy</h2><p>When you send a project inquiry, the details you provide are stored in the application database so the AMLOPA team can review and respond. Inquiry records are accessible to authorized site administrators. Do not include sensitive personal or confidential information in the message field.</p><p>For a question about information submitted through this site, use the project inquiry form and mention your request.</p></dialog>
-  <dialog class="legal-dialog" id="terms-dialog" aria-labelledby="terms-title"><form method="dialog"><button class="dialog-close" aria-label="Close terms">×</button></form><span class="eyebrow">AMLOPA INDSRV</span><h2 id="terms-title">Terms</h2><p>Website content is provided for general information. The product showcases are illustrative concepts and do not represent completed client projects or guarantees of specific outcomes.</p><p>Project scope, timing, deliverables and support are agreed separately for each engagement.</p></dialog>
+  <dialog class="legal-dialog" id="terms-dialog" aria-labelledby="terms-title"><form method="dialog"><button class="dialog-close" aria-label="Close terms">×</button></form><span class="eyebrow">AMLOPA INDSRV</span><h2 id="terms-title">Terms</h2><p>Website content is provided for general information. Product features, availability, integrations and outcomes may vary according to project scope.</p><p>Project scope, timing, deliverables and support are agreed separately for each engagement.</p></dialog>
 
   <script src="{% static 'webapp/app.js' %}" defer></script>
   <script type="module" src="{% static 'webapp/scene.js' %}"></script>

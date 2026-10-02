@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
+  <defs>
+    <linearGradient id="background" x1="76" y1="30" x2="1083" y2="743" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#172031"/>
+      <stop offset="1" stop-color="#0B111D"/>
+    </linearGradient>
+    <linearGradient id="calm" x1="237" y1="194" x2="940" y2="610" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9BC8F2"/>
+      <stop offset="1" stop-color="#91D8C5"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(296 0 0 204 835 377)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6596BC" stop-opacity=".19"/>
+      <stop offset="1" stop-color="#6596BC" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="760" rx="14" fill="url(#background)"/>
+  <path d="M0 70h1200" stroke="#2B394C"/>
+  <circle cx="29" cy="35" r="5" fill="#E7A79D"/>
+  <circle cx="47" cy="35" r="5" fill="#EBCB8A"/>
+  <circle cx="65" cy="35" r="5" fill="#8FCAA7"/>
+  <text x="94" y="40" fill="#EEF4FB" font-family="Arial,sans-serif" font-size="15" font-weight="700">SOLACE</text>
+  <text x="165" y="39" fill="#8797AC" font-family="Arial,sans-serif" font-size="9" letter-spacing="1.4">A SPACE FOR EVERYDAY WELLBEING</text>
+  <rect x="1013" y="22" width="157" height="26" rx="13" fill="#1B302F" stroke="#35544F"/>
+  <circle cx="1030" cy="35" r="4" fill="#8BD5BA"/>
+  <text x="1042" y="39" fill="#B6E5D4" font-family="Arial,sans-serif" font-size="8" letter-spacing=".8">COMPANION CONCEPT</text>
+
+  <rect x="25" y="94" width="1150" height="79" rx="8" fill="#121D2D" stroke="#2A394D"/>
+  <text x="49" y="124" fill="#8798AD" font-family="Arial,sans-serif" font-size="9" letter-spacing="1.3">A GENTLE CHECK-IN</text>
+  <text x="49" y="151" fill="#F0F4FA" font-family="Arial,sans-serif" font-size="19" font-weight="700">How are you feeling today?</text>
+  <text x="859" y="130" fill="#A6B2C2" font-family="Arial,sans-serif" font-size="9">YOUR SPACE, AT YOUR PACE</text>
+  <rect x="1025" y="112" width="125" height="35" rx="17.5" fill="#1A2B3D" stroke="#3B526A"/>
+  <circle cx="1045" cy="129.5" r="6" fill="#82C9B6" fill-opacity=".2" stroke="#82C9B6"/>
+  <path d="M1042 130c2-4 4 4 6 0" stroke="#B6E5D4" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="1059" y="133" fill="#C0CEDD" font-family="Arial,sans-serif" font-size="9">Daily reflection</text>
+
+  <rect x="25" y="194" width="698" height="367" rx="9" fill="#111A29" stroke="#2B394C"/>
+  <text x="49" y="224" fill="#EDF3FA" font-family="Arial,sans-serif" font-size="12" font-weight="700">A moment to talk</text>
+  <text x="49" y="244" fill="#8393A8" font-family="Arial,sans-serif" font-size="8" letter-spacing="1">AI COMPANION / CONVERSATION</text>
+  <circle cx="675" cy="222" r="4" fill="#83CDB5"/>
+  <text x="644" y="225" fill="#9DADBE" font-family="Arial,sans-serif" font-size="8" text-anchor="end">HERE TO LISTEN</text>
+  <path d="M49 261h650" stroke="#29374A"/>
+  <circle cx="77" cy="299" r="16" fill="#1C3040" stroke="#385466"/>
+  <path d="M70 300c2-6 11-6 14 0M73 294a4 4 0 1 0 8 0" stroke="#A5D7CD" stroke-width="1.4" stroke-linecap="round"/>
+  <rect x="105" y="276" width="403" height="66" rx="8" fill="#172537" stroke="#2C4055"/>
+  <text x="123" y="299" fill="#DCE6F1" font-family="Arial,sans-serif" font-size="10">Welcome. Take a breath, and share whatever</text>
+  <text x="123" y="318" fill="#DCE6F1" font-family="Arial,sans-serif" font-size="10">feels comfortable. We can take it one step at a time.</text>
+  <text x="473" y="332" fill="#798AA0" font-family="Arial,sans-serif" font-size="7">A MOMENT AGO</text>
+  <rect x="285" y="359" width="396" height="53" rx="8" fill="#203041" stroke="#35485D"/>
+  <text x="304" y="382" fill="#DCE5EF" font-family="Arial,sans-serif" font-size="10">I have a lot on my mind and don't know where to start.</text>
+  <text x="304" y="400" fill="#8596AA" font-family="Arial,sans-serif" font-size="7">JUST NOW</text>
+  <circle cx="77" cy="463" r="16" fill="#1C3040" stroke="#385466"/>
+  <path d="M70 464c2-6 11-6 14 0M73 458a4 4 0 1 0 8 0" stroke="#A5D7CD" stroke-width="1.4" stroke-linecap="round"/>
+  <rect x="105" y="435" width="468" height="67" rx="8" fill="#172537" stroke="#2C4055"/>
+  <text x="123" y="458" fill="#DCE6F1" font-family="Arial,sans-serif" font-size="10">That sounds like a lot to carry. Would it help to</text>
+  <text x="123" y="477" fill="#DCE6F1" font-family="Arial,sans-serif" font-size="10">pause together, or pick one thing to talk through?</text>
+  <rect x="49" y="520" width="650" height="27" rx="13.5" fill="#182638" stroke="#34465C"/>
+  <text x="66" y="538" fill="#8999AD" font-family="Arial,sans-serif" font-size="8">Write what feels comfortable...</text>
+  <circle cx="678" cy="533.5" r="9" fill="url(#calm)"/>
+  <path d="m675 534 2 2 4-5" stroke="#132131" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="745" y="194" width="430" height="367" rx="9" fill="#111A29" stroke="#2B394C"/>
+  <ellipse cx="959" cy="369" rx="200" ry="154" fill="url(#glow)"/>
+  <text x="770" y="224" fill="#EDF3FA" font-family="Arial,sans-serif" font-size="12" font-weight="700">Your wellbeing space</text>
+  <text x="770" y="244" fill="#8393A8" font-family="Arial,sans-serif" font-size="8" letter-spacing="1">SMALL PRACTICES, WHEN THEY HELP</text>
+  <rect x="770" y="264" width="380" height="89" rx="7" fill="#172436" stroke="#30445A"/>
+  <text x="790" y="287" fill="#A8B9CC" font-family="Arial,sans-serif" font-size="8" letter-spacing="1">MOOD CHECK-IN</text>
+  <text x="790" y="313" fill="#E6EEF8" font-family="Arial,sans-serif" font-size="11" font-weight="700">Notice how today feels</text>
+  <text x="790" y="334" fill="#8596AB" font-family="Arial,sans-serif" font-size="8">Your private reflection, over time.</text>
+  <circle cx="1116" cy="308" r="17" fill="#213847" stroke="#52736F"/>
+  <path d="M1109 306c0-2 2-4 4-4 2 0 3 1 3 2 1-1 2-2 4-2 3 0 4 2 4 4 0 5-8 10-8 10s-7-5-7-10Z" stroke="#A4D7C9" stroke-width="1.2"/>
+  <rect x="770" y="365" width="181" height="78" rx="7" fill="#172436" stroke="#30445A"/>
+  <circle cx="796" cy="390" r="10" fill="#25374A"/>
+  <path d="M792 390h8M796 386v8" stroke="#A9C8E7" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="814" y="393" fill="#DFE8F3" font-family="Arial,sans-serif" font-size="9" font-weight="700">Journal</text>
+  <text x="790" y="422" fill="#8797AA" font-family="Arial,sans-serif" font-size="8">Write and reflect</text>
+  <rect x="969" y="365" width="181" height="78" rx="7" fill="#172436" stroke="#30445A"/>
+  <circle cx="995" cy="390" r="10" fill="#25374A"/>
+  <path d="M995 384v6l4 3" stroke="#A9C8E7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1013" y="393" fill="#DFE8F3" font-family="Arial,sans-serif" font-size="9" font-weight="700">Mindfulness</text>
+  <text x="989" y="422" fill="#8797AA" font-family="Arial,sans-serif" font-size="8">Take a mindful pause</text>
+  <rect x="770" y="455" width="380" height="82" rx="7" fill="#172436" stroke="#30445A"/>
+  <circle cx="795" cy="481" r="10" fill="#25374A"/>
+  <path d="M791 481h8M795 477v8" stroke="#A9C8E7" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="814" y="484" fill="#DFE8F3" font-family="Arial,sans-serif" font-size="9" font-weight="700">Gratitude &amp; self-care</text>
+  <text x="790" y="511" fill="#8797AA" font-family="Arial,sans-serif" font-size="8">Make space for the small things that help.</text>
+
+  <rect x="25" y="584" width="1150" height="128" rx="8" fill="#142131" stroke="#30445A"/>
+  <rect x="48" y="604" width="42" height="42" rx="21" fill="#25364A"/>
+  <path d="M69 613v12M69 632v.5" stroke="#D7C18E" stroke-width="2" stroke-linecap="round"/>
+  <text x="107" y="619" fill="#E5D4AB" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing=".8">CRISIS SUPPORT</text>
+  <text x="107" y="640" fill="#AAB7C7" font-family="Arial,sans-serif" font-size="9">If you may be in immediate danger, contact local emergency services or a qualified crisis support provider.</text>
+  <path d="M48 664h1104" stroke="#304054"/>
+  <text x="49" y="687" fill="#8D9CAF" font-family="Arial,sans-serif" font-size="8">Solace is a wellness companion concept, not a medical service, therapist, or emergency response.</text>
+  <rect x="1035" y="675" width="116" height="22" rx="11" fill="#1D302F"/>
+  <text x="1050" y="689" fill="#A9D9C8" font-family="Arial,sans-serif" font-size="7" letter-spacing=".8">CARE WITH CONTEXT</text>
+</svg>

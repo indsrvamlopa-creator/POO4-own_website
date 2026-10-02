@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
+  <defs>
+    <linearGradient id="background" x1="50" y1="40" x2="1100" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#131E30"/>
+      <stop offset="1" stop-color="#09111E"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="220" y1="180" x2="1060" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9BC7FF"/>
+      <stop offset="1" stop-color="#72D7BD"/>
+    </linearGradient>
+    <linearGradient id="map" x1="712" y1="402" x2="1103" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B3142"/>
+      <stop offset="1" stop-color="#101C2D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="760" rx="14" fill="url(#background)"/>
+  <path d="M0 70h1200" stroke="#29364A"/>
+  <circle cx="29" cy="35" r="5" fill="#E7A79D"/>
+  <circle cx="47" cy="35" r="5" fill="#EBCB8A"/>
+  <circle cx="65" cy="35" r="5" fill="#8FCAA7"/>
+  <text x="94" y="40" fill="#EDF3FB" font-family="Arial,sans-serif" font-size="15" font-weight="700">QUICK COMMERCE</text>
+  <text x="927" y="39" fill="#8797AD" font-family="Arial,sans-serif" font-size="10" letter-spacing="2">OPERATIONS / OVERVIEW</text>
+  <rect x="1078" y="23" width="91" height="25" rx="12.5" fill="#18352F"/>
+  <circle cx="1093" cy="35.5" r="4" fill="#71D6AF"/>
+  <text x="1103" y="39" fill="#A4E5CB" font-family="Arial,sans-serif" font-size="9" letter-spacing="1">LIVE</text>
+
+  <rect x="25" y="94" width="1150" height="94" rx="9" fill="#121D2D" stroke="#2B394C"/>
+  <text x="48" y="123" fill="#8393A9" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.6">GOOD AFTERNOON, ADMIN</text>
+  <text x="48" y="153" fill="#F2F6FC" font-family="Arial,sans-serif" font-size="23" font-weight="700">Orders are moving.</text>
+  <text x="49" y="174" fill="#8F9DB0" font-family="Arial,sans-serif" font-size="11">A clear view from local stores to every doorstep.</text>
+  <rect x="884" y="117" width="118" height="48" rx="6" fill="#18273A" stroke="#30455D"/>
+  <text x="900" y="136" fill="#8798AD" font-family="Arial,sans-serif" font-size="8" letter-spacing="1">TODAY'S ORDERS</text>
+  <text x="900" y="155" fill="#F1F5FC" font-family="Arial,sans-serif" font-size="18" font-weight="700">128</text>
+  <rect x="1016" y="117" width="135" height="48" rx="6" fill="#18273A" stroke="#30455D"/>
+  <text x="1032" y="136" fill="#8798AD" font-family="Arial,sans-serif" font-size="8" letter-spacing="1">ON THE WAY</text>
+  <text x="1032" y="155" fill="#A8D2FF" font-family="Arial,sans-serif" font-size="18" font-weight="700">24</text>
+
+  <text x="30" y="222" fill="#EFF4FC" font-family="Arial,sans-serif" font-size="13" font-weight="700">Order workflow</text>
+  <text x="30" y="242" fill="#8594A8" font-family="Arial,sans-serif" font-size="9">LIVE ORDER STATUS / TODAY</text>
+  <rect x="25" y="258" width="686" height="294" rx="9" fill="#111B2A" stroke="#2B394C"/>
+  <rect x="43" y="276" width="650" height="35" rx="5" fill="#192538"/>
+  <text x="59" y="298" fill="#8292A8" font-family="Arial,sans-serif" font-size="8" letter-spacing="1">ORDER</text>
+  <text x="192" y="298" fill="#8292A8" font-family="Arial,sans-serif" font-size="8" letter-spacing="1">CUSTOMER</text>
+  <text x="357" y="298" fill="#8292A8" font-family="Arial,sans-serif" font-size="8" letter-spacing="1">STORE</text>
+  <text x="497" y="298" fill="#8292A8" font-family="Arial,sans-serif" font-size="8" letter-spacing="1">STATUS</text>
+  <text x="621" y="298" fill="#8292A8" font-family="Arial,sans-serif" font-size="8" letter-spacing="1">TOTAL</text>
+
+  <g font-family="Arial,sans-serif">
+    <path d="M43 365h650M43 419h650M43 473h650" stroke="#273448"/>
+    <text x="59" y="343" fill="#DCE6F3" font-size="10">#QC-2084</text>
+    <text x="192" y="343" fill="#CFD8E5" font-size="10">Ananya R.</text>
+    <text x="357" y="343" fill="#CFD8E5" font-size="10">Green Basket</text>
+    <rect x="488" y="327" width="86" height="22" rx="11" fill="#263348"/>
+    <circle cx="502" cy="338" r="3" fill="#B5CBFA"/>
+    <text x="511" y="342" fill="#C6D6F5" font-size="8">PICKING</text>
+    <text x="621" y="343" fill="#DCE6F3" font-size="10">₹ 486</text>
+
+    <text x="59" y="397" fill="#DCE6F3" font-size="10">#QC-2083</text>
+    <text x="192" y="397" fill="#CFD8E5" font-size="10">Rahul M.</text>
+    <text x="357" y="397" fill="#CFD8E5" font-size="10">Daily Needs</text>
+    <rect x="488" y="381" width="86" height="22" rx="11" fill="#19382F"/>
+    <circle cx="502" cy="392" r="3" fill="#71D6AF"/>
+    <text x="511" y="396" fill="#A4E5CB" font-size="8">ON ROUTE</text>
+    <text x="621" y="397" fill="#DCE6F3" font-size="10">₹ 720</text>
+
+    <text x="59" y="451" fill="#DCE6F3" font-size="10">#QC-2082</text>
+    <text x="192" y="451" fill="#CFD8E5" font-size="10">Meera S.</text>
+    <text x="357" y="451" fill="#CFD8E5" font-size="10">Fresh Corner</text>
+    <rect x="488" y="435" width="86" height="22" rx="11" fill="#203A46"/>
+    <circle cx="502" cy="446" r="3" fill="#85D3E5"/>
+    <text x="511" y="450" fill="#B5E4EF" font-size="8">DELIVERED</text>
+    <text x="621" y="451" fill="#DCE6F3" font-size="10">₹ 315</text>
+
+    <text x="59" y="505" fill="#DCE6F3" font-size="10">#QC-2081</text>
+    <text x="192" y="505" fill="#CFD8E5" font-size="10">Dev P.</text>
+    <text x="357" y="505" fill="#CFD8E5" font-size="10">Green Basket</text>
+    <rect x="488" y="489" width="86" height="22" rx="11" fill="#283344"/>
+    <circle cx="502" cy="500" r="3" fill="#E7BE84"/>
+    <text x="511" y="504" fill="#EBD2A9" font-size="8">CONFIRMED</text>
+    <text x="621" y="505" fill="#DCE6F3" font-size="10">₹ 1,090</text>
+  </g>
+
+  <rect x="729" y="211" width="446" height="341" rx="9" fill="#111B2A" stroke="#2B394C"/>
+  <text x="751" y="238" fill="#EFF4FC" font-family="Arial,sans-serif" font-size="13" font-weight="700">Delivery operations</text>
+  <text x="751" y="257" fill="#8594A8" font-family="Arial,sans-serif" font-size="9">PARTNER ASSIGNMENTS / LOCAL AREA</text>
+  <rect x="747" y="274" width="410" height="259" rx="6" fill="url(#map)"/>
+  <path d="M769 323C826 291 865 356 923 322S1037 293 1134 321M764 429C825 399 886 456 949 415S1066 393 1142 440M828 293C808 345 863 374 838 427S839 486 815 517M987 285C1025 337 962 366 1002 414S1031 477 1007 525M1090 286C1067 349 1110 388 1072 432S1090 479 1127 516" stroke="#365267" stroke-width="2"/>
+  <path d="M818 464C870 420 900 439 941 382S1013 371 1042 333 1092 355 1117 309" stroke="url(#accent)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 10"/>
+  <circle cx="818" cy="464" r="9" fill="#18352F" stroke="#71D6AF" stroke-width="2"/>
+  <circle cx="818" cy="464" r="3" fill="#71D6AF"/>
+  <circle cx="941" cy="382" r="9" fill="#1D3048" stroke="#9BC7FF" stroke-width="2"/>
+  <circle cx="941" cy="382" r="3" fill="#9BC7FF"/>
+  <circle cx="1042" cy="333" r="9" fill="#1D3048" stroke="#9BC7FF" stroke-width="2"/>
+  <circle cx="1042" cy="333" r="3" fill="#9BC7FF"/>
+  <path d="M1117 297c-7 0-12 5-12 12 0 8 12 20 12 20s12-12 12-20c0-7-5-12-12-12Z" fill="#203A46" stroke="#8BDAC8" stroke-width="2"/>
+  <circle cx="1117" cy="309" r="4" fill="#8BDAC8"/>
+  <rect x="766" y="480" width="151" height="34" rx="5" fill="#101B29" stroke="#34495C"/>
+  <circle cx="782" cy="497" r="4" fill="#71D6AF"/>
+  <text x="795" y="500" fill="#CBD8E5" font-family="Arial,sans-serif" font-size="9">PARTNER / EN ROUTE</text>
+
+  <text x="30" y="588" fill="#EFF4FC" font-family="Arial,sans-serif" font-size="13" font-weight="700">One connected ecosystem</text>
+  <text x="30" y="607" fill="#8594A8" font-family="Arial,sans-serif" font-size="9">CUSTOMER → ORDER → ADMIN → DELIVERY PARTNER → DOORSTEP</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="25" y="626" width="204" height="85" rx="7" fill="#121E2F" stroke="#30445B"/>
+    <rect x="250" y="626" width="204" height="85" rx="7" fill="#121E2F" stroke="#30445B"/>
+    <rect x="475" y="626" width="204" height="85" rx="7" fill="#121E2F" stroke="#30445B"/>
+    <rect x="700" y="626" width="204" height="85" rx="7" fill="#121E2F" stroke="#30445B"/>
+    <rect x="925" y="626" width="250" height="85" rx="7" fill="#13251F" stroke="#37634F"/>
+    <text x="43" y="653" fill="#9BC7FF" font-size="8" letter-spacing="1.2">01 / DISCOVER</text>
+    <text x="43" y="680" fill="#E4ECF7" font-size="12" font-weight="700">Customer app</text>
+    <text x="268" y="653" fill="#9BC7FF" font-size="8" letter-spacing="1.2">02 / PROCESS</text>
+    <text x="268" y="680" fill="#E4ECF7" font-size="12" font-weight="700">Order management</text>
+    <text x="493" y="653" fill="#9BC7FF" font-size="8" letter-spacing="1.2">03 / COORDINATE</text>
+    <text x="493" y="680" fill="#E4ECF7" font-size="12" font-weight="700">Admin dashboard</text>
+    <text x="718" y="653" fill="#9BC7FF" font-size="8" letter-spacing="1.2">04 / DELIVER</text>
+    <text x="718" y="680" fill="#E4ECF7" font-size="12" font-weight="700">Partner application</text>
+    <text x="943" y="653" fill="#8BDAC8" font-size="8" letter-spacing="1.2">05 / COMPLETE</text>
+    <text x="943" y="680" fill="#E4F5EB" font-size="12" font-weight="700">At your doorstep</text>
+  </g>
+</svg>
