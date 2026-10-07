@@ -66,6 +66,11 @@ img { display: block; max-width: 100%; }
 .button-quiet { border-color: rgba(231,238,249,.2); color: #e1e5ed; }
 .button-quiet:hover { border-color: rgba(231,238,249,.6); background: rgba(255,255,255,.06); }
 .button-quiet span { color: var(--blue); font-size: 13px; }
+.hero-brochure { display: inline-flex; flex-basis: 100%; align-items: center; gap: 10px; margin-top: 14px; padding-top: 16px; border-top: 1px solid rgba(231,238,249,.12); color: #c9d2df; font-size: 13px; font-weight: 500; letter-spacing: .3px; transition: color .2s; }
+.hero-brochure-icon { display: inline-grid; width: 28px; height: 28px; place-items: center; border: 1px solid rgba(231,238,249,.25); border-radius: 50%; color: var(--blue); font-size: 13px; transition: border-color .2s, transform .2s; }
+.hero-brochure small { padding: 2px 6px; border: 1px solid rgba(231,238,249,.18); border-radius: 2px; color: #8693a4; font-size: 9px; font-weight: 700; letter-spacing: 1px; }
+.hero-brochure:hover { color: var(--white); }
+.hero-brochure:hover .hero-brochure-icon { border-color: var(--blue); transform: translateY(2px); }
 .hero-signature { display: flex; align-items: center; gap: 11px; margin-top: 51px; color: #828a98; font-size: 9px; letter-spacing: .35px; }
 .hero-signature i { padding-inline: 5px; color: var(--blue); font-style: normal; }
 .signature-line { width: 30px; height: 1px; background: #768397; }

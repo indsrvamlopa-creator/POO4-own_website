@@ -265,6 +265,67 @@ document.querySelectorAll('.toast').forEach((toast) => {
   window.setTimeout(() => toast.remove(), 6000);
 });
 
+function showToast(text) {
+  let stack = document.querySelector('.toast-stack');
+  if (!stack) {
+    stack = document.createElement('div');
+    stack.className = 'toast-stack';
+    stack.setAttribute('aria-live', 'polite');
+    document.body.append(stack);
+  }
+  const toast = document.createElement('p');
+  toast.className = 'toast';
+  toast.textContent = text;
+  stack.append(toast);
+  window.setTimeout(() => toast.remove(), 6000);
+}
+
+const contactForm = document.querySelector('.contact-form');
+if (contactForm) {
+  const submitButton = contactForm.querySelector('[type="submit"]');
+
+  const showFieldErrors = (errors) => {
+    contactForm.querySelectorAll('.field-error').forEach((error) => error.remove());
+    Object.entries(errors).forEach(([name, fieldErrors]) => {
+      const field = contactForm.elements[name];
+      fieldErrors.forEach((text) => {
+        const error = document.createElement('span');
+        error.className = 'field-error';
+        error.textContent = text;
+        const meta = field?.closest('label')?.querySelector('.field-meta > span');
+        if (meta) meta.append(error);
+        else if (field) field.after(error);
+        else showToast(text);
+      });
+    });
+  };
+
+  contactForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    submitButton.disabled = true;
+    try {
+      const response = await fetch(window.location.pathname, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { 'X-Requested-With': 'XMLHttpRequest' },
+      });
+      const data = await response.json();
+      if (data.errors) {
+        showFieldErrors(data.errors);
+        return;
+      }
+      showFieldErrors({});
+      contactForm.reset();
+      if (messageCount) messageCount.textContent = '0';
+      showToast(data.message);
+    } catch {
+      showToast('Something went wrong. Please try again.');
+    } finally {
+      submitButton.disabled = false;
+    }
+  });
+}
+
 if (finePointer && !reducedMotion) {
   document.querySelectorAll('[data-magnetic]').forEach((button) => {
     button.addEventListener('pointermove', (event) => {
